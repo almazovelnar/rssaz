@@ -1,0 +1,109 @@
+.auth-page {
+    min-height: 100vh;
+    padding: 30px 15px;
+    background: #fafafa;
+
+    .logo {
+        margin: 0 0 30px 0;
+        max-width: 100%;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .form-name {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0 0 20px 0;
+        font-family: "Montserrat Semibold", sans-serif;
+    }
+
+    form {
+        padding: 50px 60px;
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.14);
+        width: 540px;
+        font-size: 16px;
+    }
+
+    .form-group {
+        margin: 0 0 10px 0;
+    }
+
+    a {
+        font-size: 14px;
+        color: #4a4a4a;
+    }
+
+    .submit-form {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 15px 0 0 0;
+    }
+
+    button.btn-custom {
+        padding: 18px 15px 18px 20px;
+        width: 190px;
+    }
+}
+
+.register-form {
+    button.btn-custom {
+        width: 100%;
+    }
+
+    .use-terms {
+        border-radius: 5px;
+        background-color: #fbfbfb;
+        padding: 12px 14px;
+    }
+
+    label {
+        a {
+            font-family: "Montserrat Semibold", sans-serif;
+            font-size: 13px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 991px) {
+    .auth-page {
+        .logo {
+            text-align: center;
+            margin: 0 0 20px 0;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .auth-page {
+        .login-form,
+        .register-form {
+            width: 100%;
+        }
+
+        form {
+            padding: 30px;
+            box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.14);
+            width: 100%;
+        }
+
+        button.btn-custom {
+            margin: 15px 0 0 0;
+            width: 100%;
+        }
+    }
+
+    .register-form {
+        button.btn-custom {
+            margin: 0;
+        }
+    }
+}

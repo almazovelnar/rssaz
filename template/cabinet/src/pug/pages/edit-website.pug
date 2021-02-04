@@ -1,0 +1,111 @@
+extends ../layout/dashboard-layout.pug
+
+block content
+    section.edit-website-page
+        .container
+            .row
+                .col
+                    .white-panel
+                        h2.block-title Saytı redaktə et
+                        |
+                        |
+                        form(action="#" method="POST")
+                            .row
+                                .col-sm-6
+                                    .form-group
+                                        label Saytın adı
+                                        input(type="text" class="form-control" value="Report.az" required)
+                                    |
+                                    |
+                                    .form-group
+                                        label Saytın ünvanı
+                                        input(type="text" class="form-control" value="http://report.az" required)
+                                    |
+                                    |
+                                // Col
+                                |
+                                |
+                                .col-sm-6
+                                    .form-group.select
+                                        label Günlük təqribi unikal giriş sayı (hosts)
+                                        select(class="form-control")
+                                            option(value="0") 1000 - 5000
+                                            option(value="1") 5000 - 10000
+                                            option(value="2") 10000 - 15000
+                                    |
+                                    |
+                                    .form-group.select
+                                        label Saytın kategoriyası
+                                        select(class="form-control")
+                                            option(value="1") Xəbər saytı
+                                            option(value="2") Creative agency
+                                            option(value="3") Trading
+                                // Col
+                            // Row
+                            |
+                            |
+                            .row
+                                .col-12
+                                    .divider
+                            // Row
+                            |
+                            |
+                            .row
+                                .col-12.sitemap-links
+                                    .actions.flex
+                                        button(type="button" class="btn-dark" data-add="en" data-lang="Rus")
+                                            i.material-icons add_circle_outline
+                                            | İngilis dili üçün rss
+                                        |
+                                        |
+                                        button(type="button" class="btn-dark" data-add="ru" data-lang="İngilis")
+                                            i.material-icons add_circle_outline
+                                            | Rus dili üçün rss
+                                    |
+                                    |
+                                    .form-group
+                                        label Saytın əsas dili üçün RSS linkini qeyd edin
+                                        .input-group
+                                            .input-group-prepend
+                                                .input-group-text http://report.az/
+                                            input(type="text" name="sitemap[az]" class="form-control" value="http://rssAZ.xml" required)
+                                // Col
+                            // Row
+                            .row
+                                .col-12
+                                    .divider
+                            // Row
+                            .row
+                                .col-lg-3.col-sm-6
+                                    .form-group.select
+                                        label RSS lentin yenilənmə intensivlyini seçin
+                                        select(class="form-control")
+                                            option(value="1") Gündə bir dəfə
+                                            option(value="2") Gündə iki dəfə
+                                            option(value="3") Gündə on dəfə
+                                // Col
+                                |
+                                |
+                                .col-lg-3.col-sm-6
+                                    .form-group.select
+                                        label RSS lentdən xəbər sayını seçin
+                                        select(class="form-control")
+                                            option(value="1") 50
+                                            option(value="2") 40
+                                            option(value="3") 30
+                                // Col
+                                |
+                                |
+                                .col-lg-6
+                                    .form-group
+                                        label Bloklanmış domenlər
+                                        select(class="form-control tags" multiple="multiple")
+                                            option(value="1" selected) report.az
+                                |
+                                |
+                                .col-12
+                                    button.btn-custom.submit-edit-website Yadda saxla
+                                        i.material-icons arrow_forward_ios
+    // Add Website Page
+    |
+    |

@@ -1,0 +1,119 @@
+.dashboard-content {
+    .title-links {
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 0 30px 0;
+
+        .block-title {
+            margin: 0;
+        }
+    
+        .links {
+            justify-content: flex-end;
+            position: relative;
+        }
+    
+        .btn-custom {
+            padding: 13px 15px 15px 18px;
+            margin: 0 0 0 10px;
+        }
+    }
+}
+
+.site {
+    justify-content: space-between;
+    align-items: center;
+    background: #fbfbfb;
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+    padding: 15px 30px;
+
+    .info {
+        opacity: 1;
+        max-width: calc(100% - 400px);
+
+        .name {
+            font-size: 16px;
+            line-height: 20px;
+            font-family: "Montserrat SemiBold", sans-serif;
+        }
+    
+        .url {
+            font-size: 14px;
+            line-height: 18px;
+            opacity: .5;
+        }
+    }
+
+    .actions {
+        display: inline-flex;
+        flex-wrap: wrap;
+
+        > * {
+            min-height: 33px;
+            margin: 0 0 0 5px;
+        }
+    }
+
+    .not-confirmed {
+        display: inline-flex;
+        align-items: center;
+        font-family: "Montserrat SemiBold", sans-serif;
+        font-size: 12px;
+        color: rgba(#474747, .6);
+        padding: 7px 15px;
+        background: #e6e6e6;
+        border-radius: 5px;
+
+        i {
+            color: #bb1d31;
+            font-size: 20px;
+            line-height: 0;
+            margin: 0 10px 0 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .site {
+        padding: 15px;
+        justify-content: center;
+    
+        .info {
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+            margin: 0 0 15px 0;
+    
+            .name {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    
+        .actions {
+            justify-content: center;
+            
+            > * {
+                margin: 2px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .dashboard-content {
+        .title-links {
+            margin: 0 0 20px 0;
+    
+            .block-title {
+                width: 100%;
+                margin: 0 0 20px 0;
+            }
+    
+            .btn-custom {
+                margin: 0 10px 5px 0;
+            }
+        }
+    }
+}

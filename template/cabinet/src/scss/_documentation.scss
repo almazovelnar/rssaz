@@ -1,0 +1,29 @@
+.documentation-page {
+    ul.nav {
+        border: none;
+        margin: 0 0 30px 0;
+    }
+
+    .nav-item {
+        margin: 0 10px 0 0;
+    }
+
+    .nav-link {
+        font-family: "Montserrat SemiBold", sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 5px 15px;
+        background: #f6f6f6;
+        border: none;
+        border-radius: 5px;
+
+        &.active {
+            background: #bb1d31;
+            color: #fff;
+        }
+    }
+
+    [class*="level-"] {
+        white-space: normal;
+    }
+}

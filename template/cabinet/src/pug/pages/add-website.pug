@@ -1,0 +1,69 @@
+extends ../layout/dashboard-layout.pug
+
+block content
+    section.add-website-page
+        .container
+            .row
+                .col
+                    .white-panel
+                        h2.block-title Yeni sayt əlavə
+                        |
+                        |
+                        form(action="#" method="POST")
+                            .row
+                                .col-sm-6
+                                    .form-group
+                                        label Saytın adı
+                                        input(type="text" class="form-control" required)
+                                    |
+                                    |
+                                    .form-group
+                                        label Saytın ünvanı
+                                        input(type="text" class="form-control" placeholder="http://yoursite.com" required)
+                                    |
+                                    |
+                                    .row
+                                        .col-md-6
+                                            .form-group.select
+                                                label Saytın kategoriyası
+                                                select(class="form-control")
+                                                    option(value="0") - Seç -
+                                                    option(value="1") News portal
+                                                    option(value="2") Creative agency
+                                                    option(value="3") Trading
+                                        // Col
+                                        |
+                                        |
+                                        .col-md-6
+                                            .form-group.select
+                                                label Saytın əsas dili
+                                                select(class="form-control")
+                                                    option(value="0") Azərbaycanca
+                                                    option(value="1") Русский
+                                                    option(value="1") English
+                                        // Col
+                                    // Row
+                                // Col
+                                |
+                                |
+                                .col-sm-6
+                                    .form-group.select
+                                        label Günlük təqribi unikal giriş sayı (hosts)
+                                        select(class="form-control")
+                                            option(value="0") 1000 - 5000
+                                            option(value="1") 5000 - 10000
+                                            option(value="2") 10000 - 15000
+                                    |
+                                    |
+                                    .form-group
+                                        label Saytın RSS linki
+                                        input(type="text" class="form-control" placeholder="Məs. http://report.az/rss.xml" required)
+                                    |
+                                    |
+                                    button.btn-custom.submit-add-website Əlavə et
+                                        i.material-icons arrow_forward_ios
+                                // Col
+                            // Row
+    // Add Website Page
+    |
+    |

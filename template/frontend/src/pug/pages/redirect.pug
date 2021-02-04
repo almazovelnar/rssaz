@@ -1,0 +1,1428 @@
+extends ../layout/layout.pug
+
+block content
+    section.redirect-page(data-next="/redirect/12345?sid=hash")
+        .container.ptb-3
+            .row
+                .col-md-6.selected-news-wrapper
+                    .news-block.selected
+                        .image.lazy
+                            ="\n"
+                            img(data-src=require("../../images/news/selected.jpg") )
+                        .info
+                            .source-date.flex
+                                ="\n"
+                                a(href="#" class="source")
+                                    ="\n"
+                                    img(src=require("../../images/favs/image0.png"))
+                                    ="\n"
+                                    span Report IA
+                                    ="\n"
+                                |
+                                |
+                                span.date 9 Avqust, 2019  11:57
+                            ="\n"
+                            p.title Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            p.description Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir. 2018-ci ildə də bank böyük məbləğdə ziyan etmişdi.
+                        |
+                        |
+                        .see-more
+                            ="\n"
+                            a(href="#" target="_blank")
+                                | Davamını oxu
+                                i.icon-angle-right
+                    // Selected news
+                    |
+                    |
+                    .row.hidden-767
+                        .col-md-6
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image0.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        // Col
+                        |
+                        |
+                        .col-md-6
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image1.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image2.png"))
+                                            ="\n"
+                                            span Report IA
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        // Col
+                        |
+                        |
+                        .col-md-6
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image2.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image3.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        // Col
+                        |
+                        |
+                        .col-md-6
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image3.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image4.png"))
+                                            ="\n"
+                                            span Report IA
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        // Col
+                // Col (selected news)
+                |
+                |
+                .col-md-3.similar-news-wrapper
+                    h2.section-title
+                        ="\n"
+                        span Oxşar xəbərlər
+                    |
+                    |
+                    .news-block
+                        .image.lazy
+                            ="\n"
+                            a(href="#")
+                                ="\n"
+                                img(data-src=require("../../images/news/image1.png") )
+                                ="\n"
+                        .info
+                            .source-date.flex
+                                ="\n"
+                                a(href="#" class="source")
+                                    ="\n"
+                                    img(src=require("../../images/favs/image4.png"))
+                                    ="\n"
+                                    span Report IA
+                                    ="\n"
+                                |
+                                |
+                                span.date 9 Avqust, 2019  11:57
+                            ="\n"
+                            a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            .description
+                                p Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir.
+                    |
+                    |
+                    .news-block
+                        .info
+                            .source-date.flex
+                                ="\n"
+                                a(href="#" class="source")
+                                    ="\n"
+                                    img(src=require("../../images/favs/image1.png"))
+                                    ="\n"
+                                    span Report IA
+                                    ="\n"
+                                |
+                                |
+                                span.date 9 Avqust, 2019  11:57
+                            ="\n"
+                            a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            .description
+                                p Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir.
+                    |
+                    |
+                    .news-block
+                        .info
+                            .source-date.flex
+                                ="\n"
+                                a(href="#" class="source")
+                                    ="\n"
+                                    img(src=require("../../images/favs/image2.png"))
+                                    ="\n"
+                                    span Report IA
+                                    ="\n"
+                                |
+                                |
+                                span.date 9 Avqust, 2019  11:57
+                            ="\n"
+                            a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            .description
+                                p Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir.
+                    |
+                    |
+                    .news-block
+                        .info
+                            .source-date.flex
+                                ="\n"
+                                a(href="#" class="source")
+                                    ="\n"
+                                    img(src=require("../../images/favs/image3.png"))
+                                    ="\n"
+                                    span Report IA
+                                    ="\n"
+                                |
+                                |
+                                span.date 9 Avqust, 2019  11:57
+                            ="\n"
+                            a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            .description
+                                p Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir.
+                    |
+                    |
+                    .news-block
+                        .info
+                            .source-date.flex
+                                ="\n"
+                                a(href="#" class="source")
+                                    ="\n"
+                                    img(src=require("../../images/favs/image2.png"))
+                                    ="\n"
+                                    span Report IA
+                                    ="\n"
+                                |
+                                |
+                                span.date 9 Avqust, 2019  11:57
+                            ="\n"
+                            a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            .description
+                                p Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir.
+                // Col (Similar news)
+                |
+                |
+                .col-lg-3.col-md-6.news-feed-wrapper
+                    h2.section-title
+                        ="\n"
+                        span Xəbər lenti
+                    |
+                    |
+                    .news-list
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image0.png"))
+                                | Xırdalanda da su olmayacaq
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                        |
+                        |
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image1.png"))
+                                | Azərbaycanda pul bazasının məbləği - MƏLUM OLDU
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                        |
+                        |
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image2.png"))
+                                | Azərbaycan Mərkəzi Bankı valyuta ehtiyatlarının məbləğini - AÇIQLADI
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                        |
+                        |
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image3.png"))
+                                | Araşdırma: şəhid ailələrinə mənsub yalnız iki nəfər namizədliyini irəli sürüb
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                        |
+                        |
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image4.png"))
+                                | "Azərbaycan Sığortaçılar Assosiasiyası"nın rəhbərliyində dəyişiklik
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                        |
+                        |
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image6.png"))
+                                | Ukraynalı deputat: "Azərbaycanla münasibətlərimiz yeni səviyyəyə yüksəlir" - MÜSAHİBƏ
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                        |
+                        |
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image1.png"))
+                                | Dövlət başçısı: “Bakı-Tbilisi-Qars dəmir yolunun tikilməsi bizim tarixi qələbəmizdir”
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                        |
+                        |
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image2.png"))
+                                | DİM ödənişli xidmətlərdən istifadə edənlər üçün üsulları açıqladı
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                        |
+                        |
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image0.png"))
+                                | Xırdalanda da su olmayacaq
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                        |
+                        |
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image1.png"))
+                                | Azərbaycanda pul bazasının məbləği - MƏLUM OLDU
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                        |
+                        |
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image2.png"))
+                                | Azərbaycan Mərkəzi Bankı valyuta ehtiyatlarının məbləğini - AÇIQLADI
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                        |
+                        |
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image3.png"))
+                                | Araşdırma: şəhid ailələrinə mənsub yalnız iki nəfər namizədliyini irəli sürüb
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                        |
+                        |
+                        .inline-news
+                            ="\n"
+                            a.title(href="redirect.html")
+                                ="\n"
+                                img(src=require("../../images/favs/image2.png"))
+                                | Azərbaycan Mərkəzi Bankı valyuta ehtiyatlarının məbləğini - AÇIQLADI
+                                ="\n"
+                            ="\n"
+                            span.date 9 Avgust, 2019 11:57
+                    // News list
+                    |
+                    |
+                    .see-all
+                        ="\n"
+                        a(href="category.html")
+                            | Bütün xəbər lenti
+                            i.icon-angle-right
+                    // See all news
+                // Col (News feed)
+        // Container
+        |
+        |
+        .actual-news.ptb-5
+            .container
+                .row
+                    .col-12
+                        h2.section-title
+                            ="\n"
+                            span Aktual
+                    // Col
+                    |
+                    |
+                    .col-md-3.col-sm-6
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image0.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                    // Col
+                    |
+                    |
+                    .col-md-3.col-sm-6
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image1.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image2.png"))
+                                        ="\n"
+                                        span Report IA
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                    // Col
+                    |
+                    |
+                    .col-md-3.col-sm-6
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image2.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image3.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                    // Col
+                    |
+                    |
+                    .col-md-3.col-sm-6
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image3.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image4.png"))
+                                        ="\n"
+                                        span Report IA
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                    // Col
+        // Actual news
+        |
+        |
+        .other-category-news.pt-5
+            .container
+                .row
+                    .col-md-3.col-sm-6
+                        .category-block
+                            h2.section-title
+                                ="\n"
+                                span Mədəniyyət
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image0.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image1.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image2.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        // Category block
+                        |
+                        |
+                        .category-block
+                            h2.section-title
+                                ="\n"
+                                span İdman
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image0.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image1.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image2.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        // Category block
+                    // Col
+                    |
+                    |
+                    .col-md-3.col-sm-6
+                        .category-block
+                            h2.section-title
+                                ="\n"
+                                span Siyasət
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image0.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image1.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image2.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        // Category block
+                        |
+                        |
+                        .category-block
+                            h2.section-title
+                                ="\n"
+                                span Sağlamlıq
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image0.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image1.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image2.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        // Category block
+                    // Col
+                    |
+                    |
+                    .col-md-3.col-sm-6
+                        .category-block
+                            h2.section-title
+                                ="\n"
+                                span İqtisadiyyat
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image0.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image1.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image2.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        // Category block
+                        |
+                        |
+                        .category-block
+                            h2.section-title
+                                ="\n"
+                                span Dünya
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image0.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image1.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image2.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        // Category block
+                    // Col
+                    |
+                    |
+                    .col-md-3.col-sm-6
+                        .category-block
+                            h2.section-title
+                                ="\n"
+                                span Mədəniyyət
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image0.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image1.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image2.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        // Category block
+                        |
+                        |
+                        .category-block
+                            h2.section-title
+                                ="\n"
+                                span Avto
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image0.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image1.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                            |
+                            |
+                            .news-block
+                                .image.lazy
+                                    ="\n"
+                                    a(href="#")
+                                        ="\n"
+                                        img(data-src=require("../../images/news/image2.png") )
+                                        ="\n"
+                                .info
+                                    .source-date.flex
+                                        ="\n"
+                                        a(href="#" class="source")
+                                            ="\n"
+                                            img(src=require("../../images/favs/image1.png"))
+                                            ="\n"
+                                            span RBK.az
+                                            ="\n"
+                                        |
+                                        |
+                                        span.date 9 Avqust, 2019  11:57
+                                    ="\n"
+                                    a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        // Category block
+                    // Col
+        // Other category news
+        |
+        |
+        .other-news.pt-5.hidden-767
+            .container
+                .row
+                    .col-12
+                        h2.section-title
+                            ="\n"
+                            span Diqər xəbərlər
+                    // Col
+                    |
+                    |
+                    .other-news-list.flex
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image0.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        |
+                        |
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image1.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        |
+                        |
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image2.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        |
+                        |
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image3.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        |
+                        |
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image0.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        |
+                        |
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image1.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        |
+                        |
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image2.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        |
+                        |
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image3.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        |
+                        |
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image0.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        |
+                        |
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image1.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        |
+                        |
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image2.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                        |
+                        |
+                        .news-block
+                            .image.lazy
+                                ="\n"
+                                a(href="#")
+                                    ="\n"
+                                    img(data-src=require("../../images/news/image3.png") )
+                                    ="\n"
+                            .info
+                                .source-date.flex
+                                    ="\n"
+                                    a(href="#" class="source")
+                                        ="\n"
+                                        img(src=require("../../images/favs/image1.png"))
+                                        ="\n"
+                                        span RBK.az
+                                        ="\n"
+                                    |
+                                    |
+                                    span.date 9 Avqust, 2019  11:57
+                                ="\n"
+                                a.title(href="#") Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub
+                    // News list
+        // Other news
+    // Redirect page
+    |
+    |

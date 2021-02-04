@@ -1,0 +1,101 @@
+extends ../layout/dashboard-layout.pug
+
+block content
+    div(class="alert-success alert fade in")
+        button(type="button" class="close" data-dismiss="alert" aria-hidden="true") ×
+        | Dəyişiliklər yadda saxlanıldı
+    |
+    |
+    section.dashboard-index
+        .filters
+            .container
+                .row
+                    .col
+                        .white-panel
+                            form(action="#" method="GET" class="flex")
+                                .by-date
+                                    .form-group
+                                        input(class="form-control" type="date" name="dates")
+                                // By Date
+                                |
+                                |
+                                .by-website
+                                    .form-group.select
+                                        select(class="form-control")
+                                            option(value="Bütün saytlar") Bütün saytlar
+                                            option(value="report.az") report.az
+                                            option(value="news.ru") news.ru
+                                // By Website
+        // Filters
+        |
+        |
+        .website-stats
+            .container
+                .row
+                    .col
+                        .white-panel
+                            .row
+                                .col-md-6
+                                    .traffic-wrapper
+                                        h2.block-title Daxil olan traffik
+                                        |
+                                        |
+                                        .traffic-block.flex
+                                            .traffic-item
+                                                p.name Keçid
+                                                p.qty 3562
+                                                p.percentage 23%
+                                            |
+                                            |
+                                            .traffic-item
+                                                p.name Görsənmə
+                                                p.qty 45 678
+                                                p.percentage 53%
+                                            |
+                                            |
+                                            .traffic-item
+                                                p.name CTR
+                                                p.qty 2.1%
+                                                p.percentage 31%
+                                // Col
+                                |
+                                |
+                                .col-md-6
+                                    .traffic-wrapper
+                                        h2.block-title Göndərilən traffik
+                                        |
+                                        |
+                                        .traffic-block.flex
+                                            .traffic-item
+                                                p.name Keçid
+                                                p.qty 3562
+                                                p.percentage 23%
+                                            |
+                                            |
+                                            .traffic-item
+                                                p.name Görsənmə
+                                                p.qty 45 678
+                                                p.percentage 53%
+                                            |
+                                            |
+                                            .traffic-item
+                                                p.name CTR
+                                                p.qty 2.1%
+                                                p.percentage 31%
+                                // Col
+        // Websites Statistics
+        |
+        |
+        .stats-chart
+            .container
+                .row
+                    .col
+                        .white-panel
+                            h2.block-title Qrafik
+                            |
+                            |
+                            .chart Chart will go here
+        // Statistics Chart
+    // Dashboard Index
+    |
+    |

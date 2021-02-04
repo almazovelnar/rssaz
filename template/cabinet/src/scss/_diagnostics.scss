@@ -1,0 +1,263 @@
+.btn-custom.btn-restore {
+    i {
+        font-size: 21px;
+    }
+}
+
+.diagnostics-info {
+    margin: 0 0 30px 0;
+
+    a {
+        display: inline-block;
+        font-family: "Montserrat SemiBold", sans-serif;
+        color: #bb1d31;
+        margin: 0 0 5px 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    strong {
+        font-family: "Montserrat SemiBold", sans-serif;
+        margin: 0 5px 0 0;
+    }
+}
+
+.diagnostics-content {
+    overflow-x: auto;
+}
+
+.diagnostics-table {
+    min-width: 800px;
+
+    &.x2-cell {
+        .t-cell {
+            width: 50%;
+        }
+    }
+
+    &.x3-cell {
+        .t-cell {
+            width: 33.333333%;
+        }
+    }
+
+    &.x4-cell {
+        .t-cell {
+            width: 25%;
+        }
+    }
+
+    &.x5-cell {
+        .t-cell {
+            width: 20%;
+        }
+    }
+
+    &.x6-cell {
+        .t-cell {
+            width: 16.666666%;
+        }
+    }
+
+    .t-row {
+        position: relative;
+        flex-wrap: wrap;
+        cursor: pointer;
+
+        > .flex {
+            &:after {
+                content: "\f105";
+                font-family: "fontAwesome";
+                position: absolute;
+                top: 13px;
+                right: 20px;
+                font-size: 20px;
+            }
+    
+            &[aria-expanded="false"] {
+                &:after {
+                    transform: rotate(90deg);
+                }
+            }
+    
+            &[aria-expanded="true"] {
+                &:after {
+                    transform: rotate(270deg);
+                }
+            }
+
+            &.no-errors {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+
+        &:first-child {
+            &:after {
+                display: none;
+            }
+        }
+
+        &:nth-child(1) {
+            font-family: "Montserrat Bold", sans-serif;
+            cursor: auto;
+        }
+
+        &:nth-child(even) {
+            background-color: #fafafa;
+        }
+    }
+
+    .t-cell {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+    .time {
+        font-family: "Montserrat SemiBold", sans-serif;
+    }
+
+    .status.warning {
+        color: #f78040b8;
+    }
+
+    .status.danger {
+        color: #bb1d31;
+    }
+
+    .collapse {
+        width: 100%;
+        cursor: auto;
+    }
+}
+
+.v-response {
+    padding: 20px;
+
+    .v-message {
+        max-width: 600px;
+        margin: 0 0 15px 0;
+        opacity: .7;
+        font-size: 15px;
+    }
+
+    strong {
+        font-family: "Montserrat Bold", sans-serif;
+    }
+}
+
+.detailed-response {
+    padding-left: 15px;
+    margin: 20px 0;
+    border-left: 3px solid #ccc;
+    overflow: hidden;
+
+    .errors-counter {
+        display: inline-flex;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+
+        div {
+            line-height: 1;
+            padding: 4px 15px 5px 15px;
+            background: #ccc;
+            border-radius: 4px 0 0 4px;
+
+            &.active {
+                background: #f78040b8;
+            }
+
+            &:nth-child(2) {
+                border-radius: 0;
+
+                &.active {
+                    background: #ff7373;
+                }
+            }
+
+            &:last-child {
+                border-radius: 0 4px 4px 0;
+
+                &.active {
+                    background: #767474;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
+
+.response-code {
+    margin: 20px 0 0 0;
+
+    > p {
+        margin: 0 0 10px 0;
+    }
+
+    .code-chunk {
+        display: inline-block;
+        position: relative;
+        line-height: 1;
+        padding-left: 15px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 1px;
+            bottom: 9px;
+            height: 100%;
+            border-left: 1px dotted #000;
+        }
+
+        .highlight {
+            display: inline-block;
+            line-height: 1.5;
+            transform: translateY(-5px);
+            white-space: normal;
+        }
+    }
+
+    .coords,
+    .code {
+        position: relative;
+        padding-left: 3px;
+        flex-wrap: nowrap;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: -11px;
+            top: 9px;
+            width: 10px;
+            border-bottom: 1px dotted #000;
+        }
+
+        span {
+            margin: 0 14px 0 0;
+            white-space: nowrap;
+        }
+    }
+
+    .code {
+        float: left;
+        margin: 0 0 10px 0;
+    }
+
+    .coords {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+
+        &:before {
+            top: 7px;
+        }
+
+        span {
+            margin: 0 17px 0 0;
+        }
+    }
+
+}

@@ -1,0 +1,50 @@
+.sitemap-links {
+    .actions {
+        justify-content: flex-end;
+        margin: 0 0 10px 0;
+    }
+
+    .btn-dark {
+        padding: 9px 14px 9px 10px;
+        margin: 0 0 0 10px;
+        color: #474747;
+        background: #f6f6f6;
+        font-size: 14px;
+
+        i {
+            margin: 0 8px 0 0;
+            opacity: 1;
+            font-size: 19px;
+            transform: scale(1.1);
+        }
+
+        &.active {
+            background: #474747;
+            color: #fff;
+
+            i {
+                transform: rotate(45deg) scale(1);
+            }
+        }
+    }
+}
+
+button.submit-edit-website {
+    margin: 10px 0 0 auto;
+    height: 60px;
+    width: 220px;
+    float: right;
+}
+
+@media (max-width: 575px) {
+    .sitemap-links {
+        .actions {
+            justify-content: flex-start;
+        }
+    
+        .btn-dark {
+            margin: 0 10px 10px 0;
+        }
+    }
+
+}

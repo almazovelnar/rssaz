@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Rss.az</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="dashboard-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="inner flex">
+							<div class="menu-toggler visible-991"><img src="images/bars-white.svg"></div>
+
+							<div class="logo-links flex">
+								<div class="logo"><a href="index.html"><img src="images/logo-white.svg"></a></div>
+
+								<ul class="hidden-991">
+									<li><a href="dashboard.html">Dashboard</a></li>
+									<li><a href="sites.html">Saytarım</a></li>
+									<li><a href="rss-validator.html">RSS Validator</a></li>
+								</ul>
+							</div>
+							<!-- Logo / Links-->
+
+							<div class="user-info flex hidden-575">
+								<div class="add-website hidden-991"><a class="flex" href="add-website.html">
+										Sayt əlavə et<i class="material-icons">add_circle_outline</i></a></div>
+
+								<div class="user flex">
+									<div class="actions">
+										<p class="name">Hamzayev Farid</p>
+										<a href="edit-profile.html">Edit profile</a>
+									</div>
+
+									<div class="user-image cover-center" style="background-image: url(images/user.png)">
+										<div class="overlay flex-center"><a class="logout" href="javascript:void(0);"><i class="material-icons">clear</i></a></div>
+									</div>
+								</div>
+								<!-- User-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header-->
+
+		<div class="side-menu-wrapper">
+			<div class="close-menu"><img src="images/close.svg"></div>
+
+			<div class="side-menu">
+				<div class="user flex">
+					<div class="actions">
+						<p class="name">John Doe</p>
+						<a href="#">Edit profile</a>
+					</div>
+
+					<div class="user-image cover-center" style="background-image: url(images/user.png)">
+						<div class="overlay flex-center"><a class="logout" href="javascript:void(0);"><i class="material-icons">clear</i></a></div>
+					</div>
+				</div>
+				<!-- User-->
+
+				<ul class="dashboard-links">
+					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="sites.html">Saytarım</a></li>
+				</ul>
+
+				<div class="add-website"><a class="flex" href="add-site.html">
+						Sayt əlavə et<i class="material-icons">add_circle_outline</i></a></div>
+			</div>
+		</div>
+		<!-- Side menu wrapper-->
+
+
+		<main class="dashboard-content">
+			<div class="guide-links">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="white-panel">
+								<ul class="flex">
+									<li>
+										<a href="#">Quick start</a>
+									</li>
+									<li>
+										<a href="#">How to add website</a>
+									</li>
+									<li>
+										<a href="#">How to create an RSS feed</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Guide links-->
+
+			<section class="sites-page">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="white-panel">
+								<div class="title-links flex">
+									<h2 class="block-title">Saytlarım</h2>
+
+									<div class="links flex">
+
+										<a class="btn-custom" href="generate.html">Generate code<i class="material-icons">arrow_forward_ios</i></a>
+									</div>
+								</div>
+
+								<div class="sites-list">
+									<div class="site flex">
+										<div class="info">
+											<p class="name">Report.az - İnformasiya agentliyi</p>
+											<p class="url">https://report.az</p>
+										</div>
+
+										<div class="actions">
+
+											<a class="btn-dark" href="news-list.html">News list<i class="material-icons">library_books</i></a>
+											<a class="btn-dark" href="edit-website.html">Edit<i class="material-icons">edit</i></a>
+											<a class="btn-delete detele-site" href="#"><i class="material-icons">highlight_off</i></a>
+										</div>
+									</div>
+									<!-- Site-->
+
+									<div class="site flex">
+										<div class="info">
+											<p class="name">Qafkazinfo.az - Xəbərlər</p>
+											<p class="url">http://qafqazinfo.az/</p>
+										</div>
+
+										<div class="actions">
+											<div class="not-confirmed"><i class="material-icons">announcement</i>Sayt hələ təstiqlənməyib</div>
+											<a class="btn-delete detele-site" href="#"><i class="material-icons">highlight_off</i></a>
+										</div>
+									</div>
+									<!-- Site-->
+								</div>
+								<!-- Sites List-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Sites Page-->
+
+		</main>
+
+		<footer class="dashboard-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="inner flex">
+							<div class="copyrights">
+								<p>RSS.az</p>
+								<p>Copyright © 2018 Bütün hüquqlar qorunur.</p>
+							</div>
+
+							<div class="reference">
+								<p>Saytdakı materialların istifadəsi zamanı istinad edilməsi vacibdir. Məlumat internet səhifələrində istifadə edildikdə hiperlink vasitəsi ilə istinad mütləqdir.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+		<script type="text/javascript" src="js/index.bundle.js"></script>
+	</body>
+
+</html>

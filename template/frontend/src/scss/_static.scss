@@ -1,0 +1,75 @@
+.static-page {
+    padding: 25px 0 50px 0;
+
+    .editor-body {
+        h1,
+        h2,
+        h3,
+        h4,
+        strong {
+            font-family: "Montserrat Bold", sans-serif;
+        }
+    
+        h1 {
+            font-size: 26px;
+        }
+    
+        h2 {
+            font-size: 22px;
+        }
+    
+        h3 {
+            font-size: 18px;
+        }
+    
+        > * {
+            margin: 0 0 20px 0;
+    
+            &:last-child {
+                margin: 0;
+            }
+        }
+    
+        a,
+        strong {
+            display: inline;
+        }
+    
+        table {
+            width: 100%;
+            max-width: 100%;
+            min-width: 500px;
+    
+            th,
+            td {
+                padding: 10px 12px;
+                vertical-align: top;
+    
+                > * {
+                    margin-bottom: 10px;
+            
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    
+        ul {
+            list-style: disc;
+            padding-left: 17px;
+    
+            li {
+                display: list-item;
+            }
+        }
+    
+        .table-container {
+            overflow-x: auto;
+        }
+    
+        .code-highlight {
+            margin: 20px 0;
+        }
+    }
+}

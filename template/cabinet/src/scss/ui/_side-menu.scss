@@ -1,0 +1,224 @@
+.main-header.active {
+    .mobile-sidebar {
+        max-height: calc(100vh - 58px);
+    }
+}
+
+.mobile-sidebar {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+    background: #420008;
+    max-height: 0;
+    overflow: hidden;
+    transition: .2s ease;
+
+    .sidebar-body {
+        height: 100%;
+        padding: 15px 0;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    li {
+        display: block;
+        text-align: center;
+
+        a {
+            display: block;
+            font-family: "Montserrat Bold", sans-serif;
+            font-size: 14px;
+            padding: 19px 15px;
+            background: transparent;
+            transition: .2s ease;
+
+            &:hover {
+                background: #59000b;
+            }
+        }
+    }
+
+    .langs {
+        display: flex;
+        justify-content: space-between;
+        max-width: 200px;
+        margin: 30px auto 0 auto;
+
+        a {
+            padding: 10px;
+        }
+    }
+}
+
+.side-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100vh;
+    background: #fff;
+    z-index: 10;
+    padding: 55px 0 0 0;
+    box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.3);
+    transform: translateX(-291px);
+    transition: .3s ease;
+
+    &.active {
+        transform: translateX(0);
+    }
+
+    .close-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px 15px;
+        text-align: right;
+
+        img {
+            width: 28px;
+        }
+    }
+
+    .dropdown.langs {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+
+        a {
+            font-size: 16px;
+            opacity: 1;
+            color: #000;
+        }
+    }
+
+    .auth {
+        margin: 0 0 20px 0;
+
+        .flex {
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .search-form {
+        margin: 0 0 15px 0;
+        .form-group {
+            width: 100%;
+
+            &:before {
+                top: 12px;
+            }
+        }
+
+        .form-control {
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+    }
+
+    .side-menu {
+        height: calc(100vh - 45px);
+        padding: 20px 15px;
+        overflow-y: auto;
+    }
+
+    .menu {
+        font-size: 20px;
+        font-family: "Montserrat SemiBold", sans-serif;
+    
+        li {
+            display: block;
+            margin: 0 0 5px 0;
+        }
+    }
+
+    
+    .socials {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            margin: 0;
+        }
+
+        a {
+            font-size: 14px;
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    /* ***** -- dashboard menu ***** */
+    .user {
+        margin: 0 0 20px 0;
+
+        .actions {
+            order: 1;
+            text-align: left;
+        }
+
+        .name {
+            margin: 0 0 4px 0;
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 14px;
+        }
+
+        .user-image {
+            margin: 0 15px 0 0;
+        }
+
+        .overlay i {
+            color: #fff;
+        }
+    }
+
+    .dashboard-links {
+        li {
+            display: block;
+            margin: 0 0 10px 0;
+        }
+
+        a {
+            border-radius: 25px;
+            font-size: 18px;
+            display: inline-block;
+            width: 100%;
+            padding: 9px 20px;
+            background: #fbfbfb;
+            font-family: "Montserrat SemiBold", sans-serif;
+        }
+    }
+
+    .add-website {
+        a {
+            justify-content: space-between;
+            font-size: 18px;
+            font-family: "Montserrat SemiBold", sans-serif;
+            background: #fbfbfb;
+        }
+    }
+
+}
+
+@media (max-width: 575px) {
+    .side-menu-wrapper {
+        padding: 45px 0 0 0;
+
+        .close-menu {
+            padding: 12px 15px;
+
+            img {
+                width: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+extends ../layout/dashboard-layout.pug
+
+block content
+    section.sites-page
+        .container
+            .row
+                .col
+                    .white-panel
+                        .title-links.flex
+                            h2.block-title Saytlarım
+                            |
+                            |
+                            .links.flex
+                                |
+                                |
+                                a(class="btn-custom" href="generate.html") Generate code
+                                    i.material-icons arrow_forward_ios
+                        |
+                        |
+                        .sites-list
+                            .site.flex
+                                .info
+                                    p.name Report.az - İnformasiya agentliyi
+                                    p.url https://report.az
+                                |
+                                |
+                                .actions
+                                    |
+                                    |
+                                    a(href="news-list.html" class="btn-dark") News list
+                                        i.material-icons library_books
+                                    |
+                                    |
+                                    a(href="edit-website.html" class="btn-dark") Edit
+                                        i.material-icons edit
+                                    |
+                                    |
+                                    a(href="#" class="btn-delete detele-site")
+                                        i.material-icons highlight_off
+                            // Site
+                            |
+                            |
+                            .site.flex
+                                .info
+                                    p.name Qafkazinfo.az - Xəbərlər
+                                    p.url http://qafqazinfo.az/
+                                |
+                                |
+                                .actions
+                                    .not-confirmed
+                                        i.material-icons announcement
+                                        | Sayt hələ təstiqlənməyib
+                                    |
+                                    |
+                                    a(href="#" class="btn-delete detele-site")
+                                        i.material-icons highlight_off
+                            // Site
+                        // Sites List
+    // Sites Page
+    |
+    |

@@ -1,0 +1,35 @@
+extends ../layout/simple-layout.pug
+
+block content
+    div(id="w1-success-0" class="alert-success alert fade in")
+        button(type="button" class="close" data-dismiss="alert" aria-hidden="true") ×
+        | Dəyişiliklər yadda saxlanıldı
+    |
+    |
+    section.auth-page.flex-center
+        .login-form
+            .logo.text-center
+                a(href="index.html")
+                    img(src=require("../../images/logo.svg"))
+            |
+            |
+            form(action="#" method="POST")
+                h2.form-name Giriş
+                |
+                |
+                .form-group
+                    input(class="form-control" type="email" name="email" placeholder="e-mail" require autocomplete="off")
+                |
+                |
+                .form-group
+                    input(class="form-control" type="password" name="password" placeholder="**********" require)
+                |
+                |
+                .submit-form.flex-center
+                    |
+                    |
+                    a(href="#") Şifrəni unutmusuz?
+                    |
+                    |
+                    button.btn-custom.submit-login Giriş
+                        i.material-icons arrow_forward_ios

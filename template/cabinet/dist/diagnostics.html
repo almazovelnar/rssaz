@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Rss.az</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="dashboard-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="inner flex">
+							<div class="menu-toggler visible-991"><img src="images/bars-white.svg"></div>
+
+							<div class="logo-links flex">
+								<div class="logo"><a href="index.html"><img src="images/logo-white.svg"></a></div>
+
+								<ul class="hidden-991">
+									<li><a href="dashboard.html">Dashboard</a></li>
+									<li><a href="sites.html">Saytarım</a></li>
+									<li><a href="rss-validator.html">RSS Validator</a></li>
+								</ul>
+							</div>
+							<!-- Logo / Links-->
+
+							<div class="user-info flex hidden-575">
+								<div class="add-website hidden-991"><a class="flex" href="add-website.html">
+										Sayt əlavə et<i class="material-icons">add_circle_outline</i></a></div>
+
+								<div class="user flex">
+									<div class="actions">
+										<p class="name">Hamzayev Farid</p>
+										<a href="edit-profile.html">Edit profile</a>
+									</div>
+
+									<div class="user-image cover-center" style="background-image: url(images/user.png)">
+										<div class="overlay flex-center"><a class="logout" href="javascript:void(0);"><i class="material-icons">clear</i></a></div>
+									</div>
+								</div>
+								<!-- User-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header-->
+
+		<div class="side-menu-wrapper">
+			<div class="close-menu"><img src="images/close.svg"></div>
+
+			<div class="side-menu">
+				<div class="user flex">
+					<div class="actions">
+						<p class="name">John Doe</p>
+						<a href="#">Edit profile</a>
+					</div>
+
+					<div class="user-image cover-center" style="background-image: url(images/user.png)">
+						<div class="overlay flex-center"><a class="logout" href="javascript:void(0);"><i class="material-icons">clear</i></a></div>
+					</div>
+				</div>
+				<!-- User-->
+
+				<ul class="dashboard-links">
+					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="sites.html">Saytarım</a></li>
+				</ul>
+
+				<div class="add-website"><a class="flex" href="add-site.html">
+						Sayt əlavə et<i class="material-icons">add_circle_outline</i></a></div>
+			</div>
+		</div>
+		<!-- Side menu wrapper-->
+
+
+		<main class="dashboard-content">
+			<div class="guide-links">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="white-panel">
+								<ul class="flex">
+									<li>
+										<a href="#">Quick start</a>
+									</li>
+									<li>
+										<a href="#">How to add website</a>
+									</li>
+									<li>
+										<a href="#">How to create an RSS feed</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Guide links-->
+
+			<section class="diagnostics-page">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="white-panel">
+								<div class="title-links flex">
+									<h2 class="block-title">Diaqnostika</h2>
+
+									<div class="links flex">
+
+										<a class="btn-custom btn-restore" href="generate-code.html">Validate<i class="material-icons">cached</i></a>
+									</div>
+								</div>
+
+								<div class="diagnostics-info">
+									<a href="https://report.az/rss/project" target="_blank">https://report.az/rss/project</a>
+									<p><strong>RSS downloaded:</strong>129 422</p>
+									<p><strong>Added:</strong>19.10.2019, 12:44</p>
+								</div>
+
+								<!-- Diagnostics info-->
+
+								<div class="filters-group">
+									<form class="flex" action="#" method="GET">
+										<div class="by-date">
+											<div class="form-group">
+												<label>Tarixə qörə</label>
+												<input class="form-control range" type="text" name="dates">
+											</div>
+										</div>
+										<!-- By Date-->
+
+										<div class="by-rss">
+											<div class="form-group select">
+												<label>RSS-ə qörə</label>
+												<select class="form-control">
+													<option value="0">Bütün saytlar</option>
+													<option value="1">report.az</option>
+													<option value="2">news.ru</option>
+												</select>
+											</div>
+										</div>
+										<!-- By RSS-->
+									</form>
+								</div>
+								<!-- Filters Group-->
+
+								<div class="diagnostics-content">
+									<div class="diagnostics-table x6-cell">
+										<div class="t-row flex">
+											<div class="t-cell">Time</div>
+											<div class="t-cell">Status</div>
+											<div class="t-cell">Success</div>
+											<div class="t-cell">Errors</div>
+											<div class="t-cell">Warnings</div>
+											<div class="t-cell">Fatal</div>
+										</div>
+
+										<div class="t-row">
+											<div class="flex" data-toggle="collapse" data-target="#v-result0" aria-expanded="true">
+												<div class="t-cell">
+													<p class="time">00:31</p>
+												</div>
+												<div class="t-cell">
+													<p class="status warning">Update warning</p>
+												</div>
+												<div class="t-cell">
+													<span>0</span>
+												</div>
+												<div class="t-cell">
+													<span>0</span>
+												</div>
+												<div class="t-cell">
+													<span>1</span>
+												</div>
+												<div class="t-cell">
+													<span>0</span>
+												</div>
+											</div>
+
+											<div class="collapse show" id="v-result0">
+												<div class="v-response">
+													<p class="v-message">Errors were found during the RCC update. Some pages may not be displayed or displayed incorrectly.</p>
+													<div class="v-info"><strong>Last file validation</strong>
+														<p>Total pages: 49</p>
+														<p>Correct ones: 48</p>
+														<p>With warnings: 1</p>
+													</div>
+													<!-- Validation info-->
+													<div class="detailed-response">
+														<div class="errors-counter">
+															<div class="active">1 warning</div>
+															<div>no errors</div>
+															<div>fatal</div>
+														</div>
+
+														<div class="response-code">
+															<p>Incorrect closing tag <span class="highlight">iframe</span></p>
+															<div class="code-chunk">
+																<div class="coords flex">
+																	<span>line</span>
+																	<span>pos</span>
+																</div>
+																<div class="code flex">
+																	<span>115</span>
+																	<span>90</span>
+
+																	<div><span class="highlight">&lt;pubDate&gt;Mon, 28 Oct 2019 15:53:25 +0400&lt;/pubDate&gt;</span></div>
+																</div>
+															</div>
+														</div>
+
+														<div class="response-code">
+															<p>Incorrect closing tag <span class="highlight">iframe</span></p>
+															<div class="code-chunk">
+																<div class="coords flex">
+																	<span>line</span>
+																	<span>pos</span>
+																</div>
+																<div class="code flex">
+																	<span>115</span>
+																	<span>90</span>
+
+																</div>
+															</div>
+															<div class="code-highlight">
+																<div class="level-1">&lt;item&gt;
+																	<div class="level-2">&lt;description&gt;
+																		<div class="level-3 error">&lt;link&gt;https://report.az/maliyye/amb-elektron-imza-uzre-sertifikatlasma-sistemini-modernlesdirir-sistemini-modernlesdirir/&lt;/link&gt;</div>&lt;/description&gt;
+																	</div>
+																	<div class="level-2">&lt;pubDate&gt;Mon, 28 Oct 2019 15:53:25 +0400&lt;/pubDate&gt;</div>
+																	<div class="level-2">&lt;category&gt;Biznes və maliyyə&lt;/category&gt;</div>&lt;/item&gt;
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- Detailed Reponse-->
+												</div>
+											</div>
+											<!-- Collapse-->
+										</div>
+										<!-- T-row-->
+
+										<div class="t-row">
+											<div class="flex" data-toggle="collapse" data-target="#v-result1" aria-expanded="false">
+												<div class="t-cell">
+													<p class="time">23:58</p>
+												</div>
+												<div class="t-cell">
+													<p class="status danger">Update error</p>
+												</div>
+												<div class="t-cell">
+													<span>0</span>
+												</div>
+												<div class="t-cell">
+													<span>1</span>
+												</div>
+												<div class="t-cell">
+													<span>0</span>
+												</div>
+												<div class="t-cell">
+													<span>0</span>
+												</div>
+											</div>
+
+											<div class="collapse" id="v-result1">
+												<div class="v-response">
+													<p class="v-message">Errors were found during the RCC update. Some pages may not be displayed or displayed incorrectly.</p>
+													<div class="v-info"><strong>Last file validation</strong>
+														<p>Total pages: 49</p>
+														<p>Correct ones: 48</p>
+														<p>With warnings: 1</p>
+													</div>
+													<!-- Validation info-->
+													<div class="detailed-response">
+														<div class="errors-counter">
+															<div>0 warnings</div>
+															<div class="active">1 error</div>
+															<div>fatal</div>
+														</div>
+
+														<div class="response-code">
+															<p>Incorrect closing tag <span class="highlight">iframe</span></p>
+															<div class="code-chunk">
+																<div class="coords flex">
+																	<span>line</span>
+																	<span>pos</span>
+																</div>
+																<div class="code flex">
+																	<span>115</span>
+																	<span>90</span>
+
+																	<div>
+																		<!-- Place XML code here-->
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- Detailed Reponse-->
+												</div>
+											</div>
+											<!-- Collapse-->
+										</div>
+										<!-- T-row-->
+
+										<div class="t-row">
+											<div class="flex no-errors" data-toggle="collapse" data-target="#v-result2" aria-expanded="false">
+												<div class="t-cell">
+													<p class="time">23:41</p>
+												</div>
+												<div class="t-cell">
+													<p class="status warning">Update warning</p>
+												</div>
+												<div class="t-cell">
+													<span>0</span>
+												</div>
+												<div class="t-cell">
+													<span>0</span>
+												</div>
+												<div class="t-cell">
+													<span>1</span>
+												</div>
+												<div class="t-cell">
+													<span>0</span>
+												</div>
+											</div>
+										</div>
+										<!-- T-row-->
+
+										<div class="t-row">
+											<div class="flex" data-toggle="collapse" data-target="#v-result3" aria-expanded="false">
+												<div class="t-cell">
+													<p class="time">23:38</p>
+												</div>
+												<div class="t-cell">
+													<p class="status warning">Update warning</p>
+												</div>
+												<div class="t-cell">
+													<span>0</span>
+												</div>
+												<div class="t-cell">
+													<span>0</span>
+												</div>
+												<div class="t-cell">
+													<span>1</span>
+												</div>
+												<div class="t-cell">
+													<span>0</span>
+												</div>
+											</div>
+
+											<div class="collapse" id="v-result3">
+												<div class="v-response">
+													<p class="v-message">Errors were found during the RCC update. Some pages may not be displayed or displayed incorrectly.</p>
+													<div class="v-info"><strong>Last file validation</strong>
+														<p>Total pages: 49</p>
+														<p>Correct ones: 48</p>
+														<p>With warnings: 1</p>
+													</div>
+													<!-- Validation info-->
+													<div class="detailed-response">
+														<div class="errors-counter">
+															<div class="active">1 warning</div>
+															<div>no errors</div>
+															<div>fatal</div>
+														</div>
+
+														<div class="response-code">
+															<p>Incorrect closing tag <span class="highlight">iframe</span></p>
+															<div class="code-chunk">
+																<div class="coords flex">
+																	<span>line</span>
+																	<span>pos</span>
+																</div>
+																<div class="code flex">
+																	<span>115</span>
+																	<span>90</span>
+
+																	<div>
+																		<!-- Place XML code here-->
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- Detailed Reponse-->
+												</div>
+											</div>
+											<!-- Collapse-->
+										</div>
+										<!-- T-row-->
+									</div>
+									<!-- Diagnostics table-->
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="dashboard-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="inner flex">
+							<div class="copyrights">
+								<p>RSS.az</p>
+								<p>Copyright © 2018 Bütün hüquqlar qorunur.</p>
+							</div>
+
+							<div class="reference">
+								<p>Saytdakı materialların istifadəsi zamanı istinad edilməsi vacibdir. Məlumat internet səhifələrində istifadə edildikdə hiperlink vasitəsi ilə istinad mütləqdir.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+		<script type="text/javascript" src="js/index.bundle.js"></script>
+	</body>
+
+</html>

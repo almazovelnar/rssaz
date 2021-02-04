@@ -1,0 +1,358 @@
+extends ../layout/dashboard-layout.pug
+
+block content
+    section.generate-code-page
+        .container
+            .row
+                .col
+                    .white-panel
+                        .ajax-loader.flex-center
+                            i.fa.fa-cog.fa-spin.fa-2x.fa-fw
+                        // Ajax Loader
+                        |
+                        |
+                        h2.block-title Code Generation
+                        |
+                        |
+                        ul.nav.nav-tabs(role="tablist")
+                            li.nav-item
+                                ="\n"
+                                a(href="#amp" data-toggle="tab" class="nav-link active") AMP
+                            li.nav-item
+                                ="\n"
+                                a(href="#default" data-toggle="tab" class="nav-link") Default
+                        // Nav tabs
+                        |
+                        |
+                        form(action="#" method="POST" id="code-generation-form")
+                            .row
+                                .col-md-6
+                                    .form-group.select
+                                        label Saytı seçin
+                                        select(class="form-control" name="website")
+                                            option(value="report.az") Report.az
+                                            option(value="news.ru") News.ru
+                                            option(value="finans.az") Finans.az
+                                            option(value="open.az") Open.az
+                                    |
+                                    |
+                                    .row
+                                        .col-lg-6
+                                            .form-group.select
+                                                label Blok sayı
+                                                select(class="form-control" name="num-of-cols")
+                                                    option(value="4") 4
+                                                    option(value="3") 3
+                                                    option(value="5") 5
+                                        // Col
+                                        |
+                                        |
+                                        .col-lg-6
+                                            .form-group
+                                                label Blokun eni (px)
+                                                input(type="text" class="form-control" name="wrapper-width" value="900")
+                                        // Col
+                                    // Row
+                                    |
+                                    |
+                                    .row
+                                        .col-12
+                                            .divider
+                                    // Row
+                                    |
+                                    |
+                                    .row
+                                        .col-md-12
+                                            .form-group.select
+                                                label Başlığın fontu
+                                                select(class="form-control" name="font-family")
+                                                    option(value="Arial") Arial
+                                                    option(value="Verdana") Verdana
+                                                    option(value="Consolas") Consolas
+                                        // Col
+                                        |
+                                        |
+                                        .col-md-6
+                                            .form-group.select
+                                                label Başlığın stili
+                                                select(class="form-control" name="font-weight")
+                                                    option(value="Bold") Bold
+                                                    option(value="Normal") Normal
+                                                    option(value="Light") Light
+                                        // Col
+                                        |
+                                        |
+                                        .col-md-6
+                                            .form-group.select
+                                                label Başlığın font ölçüsu
+                                                select(class="form-control" name="font-size")
+                                                    option(value="14px") 14px
+                                                    option(value="15px") 15px
+                                                    option(value="16px") 16px
+                                                    option(value="17px") 17px
+                                                    option(value="18px") 18px
+                                        // Col
+                                        |
+                                        |
+                                        .col-md-6
+                                            .form-group.select
+                                                label İstiqamət
+                                                select(class="form-control" name="direction")
+                                                    option(value="horizontal") Horizontal (Üfüqi)
+                                                    option(value="vertical") Vertical (Şaquli)
+                                        // Col
+                                    // Row
+                                    |
+                                    |
+                                // Col
+                                |
+                                |
+                                .col-md-6
+                                    .form-group
+                                        button.btn-custom.action-generate
+                                            | Generate code
+                                            i.material-icons arrow_forward_ios
+                                    |
+                                    |
+                                    .tab-content
+                                        .tab-pane.active(role="tabpanel" id="amp")
+                                            .generated-code
+                                                .form-group
+                                                    textarea(class="form-control" readonly)
+                                                        | <!-- rss.az begin -->
+                                                        |
+                                                        | iframe(src="https://rss.az/amp/code”)
+                                                        |
+                                                        | <!-- rss.az end -->
+                                                |
+                                                |
+                                                button(type="button" class="btn-custom copy-to-clipboard")
+                                                    | Copy code to clipboard
+                                                    i.material-icons arrow_forward_ios
+                                        // Tab pane
+                                        |
+                                        |
+                                        .tab-pane(role="tabpanel" id="default")
+                                            .generated-code
+                                                .form-group
+                                                    textarea(class="form-control" readonly)
+                                                        | <!-- rss.az begin -->
+                                                        |
+                                                        | iframe(src="https://rss.az/default/code”)
+                                                        |
+                                                        | <!-- rss.az end -->
+                                                |
+                                                |
+                                                button(type="button" class="btn-custom copy-to-clipboard")
+                                                    | Copy code to clipboard
+                                                    i.material-icons arrow_forward_ios
+                                        // Tab pane
+                                    // Tab content
+                                // Col
+                            // Row
+                        // Form
+                    // White Panel
+                    |
+                    |
+                    .white-panel
+                        h2.block-title Preview
+                        |
+                        |
+                        .slider-preview
+                            .horizontal-preview.visible
+                                .custom-slider
+                                    .slider-track
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image5.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                        |
+                                        |
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image4.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                        |
+                                        |
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image3.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                        |
+                                        |
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image2.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                        |
+                                        |
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image1.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                        |
+                                        |
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image5.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                        |
+                                        |
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image4.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                    // Slider Track
+                                    |
+                                    |
+                                    .prev-slide
+                                    .next-slide
+                                // Custom Slider
+                            // Horizontal preview
+                            |
+                            |
+                            .vertical-preview
+                                .blank-text
+                                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur pariatur quos, vel necessitatibus doloremque earum, nobis recusandae aspernatur, maiores neque voluptas rem facilis accusamus sed quaerat ipsam inventore dolore adipisci.
+                                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, odit veritatis cum deleniti corporis molestias similique ducimus minus quam beatae!
+                                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ratione iure ea, ipsum nobis vel fuga natus numquam sed similique illo omnis tempore maiores nam explicabo veniam eaque aut assumenda beatae reiciendis quisquam obcaecati, adipisci totam corporis! Debitis, mollitia autem, dolor corporis, iure fuga odit eaque necessitatibus dolore error quod!
+                                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sapiente soluta fugit quis quia provident natus, architecto reiciendis! Quibusdam culpa accusamus, dolores ullam reiciendis sunt dignissimos enim excepturi asperiores perferendis possimus illum odit, at, exercitationem quisquam laborum placeat tempore vitae eligendi? Nobis vitae magnam, iusto expedita mollitia odit porro at assumenda doloremque facilis similique ratione recusandae, veniam inventore reprehenderit ea fuga quibusdam nostrum eligendi harum? Saepe perferendis inventore quis accusamus?
+                                |
+                                |
+                                .custom-slider
+                                    .slider-track
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image5.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                        |
+                                        |
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image4.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                        |
+                                        |
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image3.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                        |
+                                        |
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image2.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                        |
+                                        |
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image1.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                        |
+                                        |
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image5.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                        |
+                                        |
+                                        .slide
+                                            .slide-post(style="background-color: ")
+                                                .slide-post__image(style="background-image: url("+require("../../images/news/image4.jpg")+")")
+                                                .gradient(style="background-image: linear-gradient(to-bottom, rgba(?, ?, ?, 0), rgba(?, ?, ?, .8), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))")
+                                                |
+                                                |
+                                                a(href="#" target="_blank" class="slide-post__info")
+                                                    ="\n"
+                                                    span Lorem ipsum dolor sit amet consectetur adipisicing elit. officia?
+                                                    ="\n"
+                                    // Slider Track
+                                    |
+                                    |
+                                    .prev-slide
+                                    .next-slide
+                                // Custom Slider
+                            // Vertical preview
+                        // Slider preview
+    // Add Website Page
+    |
+    |

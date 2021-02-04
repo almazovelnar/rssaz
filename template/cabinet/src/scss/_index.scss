@@ -1,0 +1,322 @@
+/* ***** -- news filters group ***** */
+.news-filters-group {
+    font-family: "Montserrat Medium", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 25px 0 30px 0;
+
+    form,
+    .col-12 {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        margin: 0 9px 0 0;
+
+        label {
+            margin: 0;
+        }
+    }
+
+    input[type="radio"] {
+        display: none;
+
+        + label {
+            display: inline-block;
+            padding: 10px 24px;
+            background: #f9f9f9;
+            cursor: pointer;
+
+            &:hover {
+                background: #e8e8e8;
+            }
+        }
+
+        &:checked {
+            + label {
+                background: #e8e8e8;
+            }
+        }
+    }
+
+    .form-group {
+        margin: 0;
+
+        &.select {
+            min-width: 200px;
+            margin: 0 10px 0 0;
+
+            &:before {
+                top: 50%;
+                bottom: auto;
+                transform: translateY(-48%) rotate(90deg);
+            }
+
+            .form-control {
+                padding-right: 60px;
+                background: #f9f9f9;
+                border: none;
+            }
+        }
+    }
+
+    .form-control {
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 0;
+    }
+
+    .search-field {
+        position: relative;
+        margin-left: auto;
+        width: 100%;
+        max-width: 300px;
+
+        .form-control {
+            padding-right: 38px;
+            background: #fff;
+        }
+
+        &:after {
+            content: "\f002";
+            font-family: "fontAwesome";
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            opacity: .5;
+        }
+    }
+}
+
+.news-filters-group.mobile-filters {
+    padding: 20px 0;
+
+    .form-group {
+        &.select {
+            min-width: auto;
+            margin: 0 5px 0 0;
+
+            .form-control {
+                padding-right: 35px;
+            }
+        }
+    }
+
+    .search-field {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        right: 15px;
+        margin: 0;
+        width: 38px;
+        height: 38px;
+        max-width: 100%;
+        background: #fff;
+        border: 1px solid #dbdbdb;
+        z-index: 5;
+
+        &:after {
+            display: none;
+        }
+
+        &.active {
+            left: 15px;
+            width: auto;
+
+            .form-group {
+                display: block;
+            }
+
+            .open-search {
+                display: none;
+            }
+
+            .close-search {
+                display: flex;
+            }
+        }
+
+        .form-group {
+            padding: 2px 0;
+            display: none;
+            width: calc(100% - 40px);
+        }
+
+        .form-control {
+            padding: 8px 15px;
+            border: none;
+        }
+
+        .open-search,
+        .close-search {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 100%;
+        }
+
+        .open-search {
+            font-size: 14px;
+            opacity: .7;
+        }
+
+        .close-search {
+            i {
+                font-size: 22px;
+                opacity: .7;
+            }
+
+            display: none;
+        }
+    }
+
+}
+
+/* ***** -- hot news ***** */
+.hot-news-wrapper {
+    .news-block {
+        margin: 40px 0 0 0;
+
+        &.big {
+            margin: 0;
+        }
+    }
+}
+
+/* ***** -- news feed ***** */
+.news-feed-wrapper {
+    display: flex;
+    flex-flow: column;
+
+    .news-list {
+        margin: 0 0 25px 0;
+    }
+}
+
+.see-all {
+    margin-top: auto;
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #7a7a7a;
+        padding: 20px 15px 18px 15px;
+        border: 1px solid #dbdbdb;
+        transition: .2s ease;
+
+        &:hover {
+            color: #474747;
+            border: 1px solid #474747;
+        }
+    }
+
+    i {
+        font-size: 12px;
+        margin: 0 0 0 5px;
+    }
+}
+
+/* ***** -- actual news ***** */
+.actual-news {
+    background: #fbfbfb;
+
+    .section-title {
+        span {
+            background: #fbfbfb;
+        }
+    }
+
+    .news-block {
+        margin: 0 0 40px 0;
+    }
+
+    .col-md-3:last-child {
+        .news-block {
+            margin: 0;
+        }
+    }
+}
+
+/* ***** -- category news ***** */
+.other-category-news {
+    .news-block {
+        margin: 0 0 40px 0;
+
+        .title {
+            height: 72px;
+            overflow: hidden;
+        }
+    }
+}
+
+/* ***** -- other news ***** */
+.other-news {
+    background-image: linear-gradient(to bottom, #fbfbfb, #ffffff);
+
+    .section-title {
+        span {
+            background: #fbfbfb;
+        }
+    }
+}
+
+.other-news-list {
+    position: relative;
+    width: 100%;    
+
+    .news-block {
+        width: 25%;
+        padding: 0 15px;
+        margin: 0 0 50px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    /* ***** -- category news ***** */
+    .other-category-news {
+        .news-block {
+            .title {
+                height: 76px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    /* ***** -- other news ***** */
+    .other-news-list {
+        .news-block {
+            width: 33.333333%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    /* ***** -- other news ***** */
+    .other-news-list {
+        .news-block {
+            width: 50%;
+        }
+    }
+
+    /* ***** -- news filters group ***** */
+    .news-filters-group {
+        .search-field {
+            max-width: 100%;
+        }
+    }
+
+}

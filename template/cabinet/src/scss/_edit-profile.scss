@@ -1,0 +1,91 @@
+.edit-profile {
+    .upload-avatar-block {
+        position: relative;
+        width: 190px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .profile-info {
+        width: calc(100% - 190px);
+        padding: 0 0 0 30px;
+    }
+
+    .image-preview {
+        height: calc(100% - 13px);
+        position: relative;
+        background: #f7f7f7 no-repeat center;
+        background-size: contain;
+
+        &.image-loaded {
+            span {
+                display: none;
+            }
+        }
+
+        span {
+            font-size: 13px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+        }
+    }
+
+    .trigger-image-upload {
+        padding: 5px 0;
+        position: absolute;
+        bottom: 13px;
+        left: 0;
+        width: 100%;
+        background: #bb1d31;
+        color: #fff;
+        border-radius: 5px;
+    }
+}
+
+button.submit-edit-profile,
+button.submit-edit-password {
+    margin: 30px 0 0 auto;
+    height: 60px;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .edit-profile {
+        .upload-avatar-block {
+            width: 45%;
+        }
+    
+        .profile-info {
+            width: 55%;
+            padding: 0 0 0 30px;
+        }
+
+        .image-preview {
+            height: 100%;
+            position: relative;
+        }
+
+        .trigger-image-upload {
+            bottom: 0;
+        }
+    }
+
+}
+
+@media (max-width: 575px) {
+    .edit-profile {
+        .upload-avatar-block {
+            width: 100%;
+            margin: 0 0 15px 0;
+            height: 60vw;
+        }
+    
+        .profile-info {
+            width: 100%;
+            padding: 0 ;
+        }
+    }
+
+}

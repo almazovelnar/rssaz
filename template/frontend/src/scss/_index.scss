@@ -1,0 +1,127 @@
+/* ***** -- hot news ***** */
+.hot-news-wrapper {
+    .news-block {
+        margin: 40px 0 0 0;
+
+        &.big {
+            margin: 0;
+        }
+    }
+}
+
+/* ***** -- news feed ***** */
+.news-feed-wrapper {
+    display: flex;
+    flex-flow: column;
+
+    .news-list {
+        margin: 0 0 25px 0;
+    }
+}
+
+.see-all {
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 12px;
+    margin-top: auto;
+    text-transform: uppercase;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #7a7a7a;
+        padding: 16px 15px 15px 15px;
+        border: 1px solid #dbdbdb;
+        transition: .2s ease;
+
+        &:hover {
+            color: #474747;
+            border: 1px solid #474747;
+        }
+    }
+
+    i {
+        font-size: 18px;
+        margin: 0 0 0 10px;
+    }
+}
+
+/* ***** -- actual news ***** */
+.actual-news {
+    background: #fbfbfb;
+
+    .section-title {
+        span {
+            background: #fbfbfb;
+        }
+    }
+}
+
+/* ***** -- other category news ***** */
+.other-category-news {
+    .news-block {
+        margin: 0 0 40px 0;
+
+        .title {
+            height: 72px;
+            overflow: hidden;
+        }
+    }
+}
+
+/* ***** -- other news ***** */
+.other-news {
+    background-image: linear-gradient(to bottom, #fbfbfb, #ffffff);
+
+    .section-title {
+        span {
+            background: #fbfbfb;
+        }
+    }
+}
+
+.other-news-list {
+    position: relative;
+    width: 100%;    
+
+    .news-block {
+        width: 25%;
+        padding: 0 15px;
+        margin: 0 0 50px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    /* ***** -- actual news ***** */
+    .actual-news {
+        .news-block {
+            margin: 0 0 40px 0;
+        }
+
+        .col-md-3:last-child {
+            .news-block {
+                margin: 0;
+            }
+        }
+    }
+
+    /* ***** -- other news ***** */
+    .other-news-list {
+        .news-block {
+            width: 33.333333%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    /* ***** -- other news ***** */
+    .other-news-list {
+        padding: 0 7px;
+
+        .news-block {
+            width: 50%;
+            padding: 0 8px;
+        }
+    }
+
+}

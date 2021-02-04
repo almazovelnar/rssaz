@@ -1,0 +1,44 @@
+/* ***** Bootstrap ***** */
+@import "./bootstrap/bootstrap";
+
+/* ***** Fonts ***** */
+@import "_fonts";
+
+/* ***** Default ***** */
+@import "_default";
+
+/* ***** Helpers ***** */
+@import "_helpers";
+
+/* ***** Header ***** */
+@import "./ui/header";
+
+/* ***** Side menu ***** */
+@import "./ui/side-menu";
+
+/* ***** News blocks ***** */
+@import "./ui/news-blocks";
+
+/* ***** Main page ***** */
+@import "./index";
+
+/* ***** Category ***** */
+@import "./category";
+
+/* ***** Redirect *****/
+@import "./redirect";
+
+/* ***** Search ***** */
+@import "./search";
+
+/* ***** Reviews ***** */
+@import "./reviews";
+
+/* ***** Static ***** */
+@import "./static";
+
+/* ***** Footer ***** */
+@import "./ui//footer";
+
+/* ***** 404 ***** */
+@import "./ui/404";

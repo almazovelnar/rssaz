@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Rss.az</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="dashboard-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="inner flex">
+							<div class="menu-toggler visible-991"><img src="images/bars-white.svg"></div>
+
+							<div class="logo-links flex">
+								<div class="logo"><a href="index.html"><img src="images/logo-white.svg"></a></div>
+
+								<ul class="hidden-991">
+									<li><a href="dashboard.html">Dashboard</a></li>
+									<li><a href="sites.html">Saytarım</a></li>
+									<li><a href="rss-validator.html">RSS Validator</a></li>
+								</ul>
+							</div>
+							<!-- Logo / Links-->
+
+							<div class="user-info flex hidden-575">
+								<div class="add-website hidden-991"><a class="flex" href="add-website.html">
+										Sayt əlavə et<i class="material-icons">add_circle_outline</i></a></div>
+
+								<div class="user flex">
+									<div class="actions">
+										<p class="name">Hamzayev Farid</p>
+										<a href="edit-profile.html">Edit profile</a>
+									</div>
+
+									<div class="user-image cover-center" style="background-image: url(images/user.png)">
+										<div class="overlay flex-center"><a class="logout" href="javascript:void(0);"><i class="material-icons">clear</i></a></div>
+									</div>
+								</div>
+								<!-- User-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header-->
+
+		<div class="side-menu-wrapper">
+			<div class="close-menu"><img src="images/close.svg"></div>
+
+			<div class="side-menu">
+				<div class="user flex">
+					<div class="actions">
+						<p class="name">John Doe</p>
+						<a href="#">Edit profile</a>
+					</div>
+
+					<div class="user-image cover-center" style="background-image: url(images/user.png)">
+						<div class="overlay flex-center"><a class="logout" href="javascript:void(0);"><i class="material-icons">clear</i></a></div>
+					</div>
+				</div>
+				<!-- User-->
+
+				<ul class="dashboard-links">
+					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="sites.html">Saytarım</a></li>
+				</ul>
+
+				<div class="add-website"><a class="flex" href="add-site.html">
+						Sayt əlavə et<i class="material-icons">add_circle_outline</i></a></div>
+			</div>
+		</div>
+		<!-- Side menu wrapper-->
+
+
+		<main class="dashboard-content">
+			<div class="guide-links">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="white-panel">
+								<ul class="flex">
+									<li>
+										<a href="#">Quick start</a>
+									</li>
+									<li>
+										<a href="#">How to add website</a>
+									</li>
+									<li>
+										<a href="#">How to create an RSS feed</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Guide links-->
+
+			<section class="edit-website-page">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="white-panel">
+								<h2 class="block-title">Saytı redaktə et</h2>
+
+								<form action="#" method="POST">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label>Saytın adı</label>
+												<input class="form-control" type="text" value="Report.az" required>
+											</div>
+
+											<div class="form-group">
+												<label>Saytın ünvanı</label>
+												<input class="form-control" type="text" value="http://report.az" required>
+											</div>
+
+										</div>
+										<!-- Col-->
+
+										<div class="col-sm-6">
+											<div class="form-group select">
+												<label>Günlük təqribi unikal giriş sayı (hosts)</label>
+												<select class="form-control">
+													<option value="0">1000 - 5000</option>
+													<option value="1">5000 - 10000</option>
+													<option value="2">10000 - 15000</option>
+												</select>
+											</div>
+
+											<div class="form-group select">
+												<label>Saytın kategoriyası</label>
+												<select class="form-control">
+													<option value="1">Xəbər saytı</option>
+													<option value="2">Creative agency</option>
+													<option value="3">Trading</option>
+												</select>
+											</div>
+										</div>
+										<!-- Col-->
+									</div>
+									<!-- Row-->
+
+									<div class="row">
+										<div class="col-12">
+											<div class="divider"></div>
+										</div>
+									</div>
+									<!-- Row-->
+
+									<div class="row">
+										<div class="col-12 sitemap-links">
+											<div class="actions flex">
+												<button class="btn-dark" type="button" data-add="en" data-lang="Rus"><i class="material-icons">add_circle_outline</i>İngilis dili üçün rss</button>
+
+												<button class="btn-dark" type="button" data-add="ru" data-lang="İngilis"><i class="material-icons">add_circle_outline</i>Rus dili üçün rss</button>
+											</div>
+
+											<div class="form-group">
+												<label>Saytın əsas dili üçün RSS linkini qeyd edin</label>
+												<div class="input-group">
+													<div class="input-group-prepend">
+														<div class="input-group-text">http://report.az/</div>
+													</div>
+													<input class="form-control" type="text" name="sitemap[az]" value="http://rssAZ.xml" required>
+												</div>
+											</div>
+										</div>
+										<!-- Col-->
+									</div>
+									<!-- Row-->
+									<div class="row">
+										<div class="col-12">
+											<div class="divider"></div>
+										</div>
+									</div>
+									<!-- Row-->
+									<div class="row">
+										<div class="col-lg-3 col-sm-6">
+											<div class="form-group select">
+												<label>RSS lentin yenilənmə intensivlyini seçin</label>
+												<select class="form-control">
+													<option value="1">Gündə bir dəfə</option>
+													<option value="2">Gündə iki dəfə</option>
+													<option value="3">Gündə on dəfə</option>
+												</select>
+											</div>
+										</div>
+										<!-- Col-->
+
+										<div class="col-lg-3 col-sm-6">
+											<div class="form-group select">
+												<label>RSS lentdən xəbər sayını seçin</label>
+												<select class="form-control">
+													<option value="1">50</option>
+													<option value="2">40</option>
+													<option value="3">30</option>
+												</select>
+											</div>
+										</div>
+										<!-- Col-->
+
+										<div class="col-lg-6">
+											<div class="form-group">
+												<label>Bloklanmış domenlər</label>
+												<select class="form-control tags" multiple="multiple">
+													<option value="1" selected>report.az</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-12">
+											<button class="btn-custom submit-edit-website">Yadda saxla<i class="material-icons">arrow_forward_ios</i></button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Add Website Page-->
+
+		</main>
+
+		<footer class="dashboard-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="inner flex">
+							<div class="copyrights">
+								<p>RSS.az</p>
+								<p>Copyright © 2018 Bütün hüquqlar qorunur.</p>
+							</div>
+
+							<div class="reference">
+								<p>Saytdakı materialların istifadəsi zamanı istinad edilməsi vacibdir. Məlumat internet səhifələrində istifadə edildikdə hiperlink vasitəsi ilə istinad mütləqdir.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+		<script type="text/javascript" src="js/index.bundle.js"></script>
+	</body>
+
+</html>

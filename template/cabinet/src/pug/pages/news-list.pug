@@ -1,0 +1,385 @@
+extends ../layout/dashboard-layout.pug
+
+block content
+    section.site-news-page
+        .container
+            .row
+                .col
+                    .white-panel
+                        .title-links.flex
+                            h2.block-title Report.az news list
+                            |
+                            |
+                            .links.flex
+                                |
+                                |
+                                a(class="btn-custom add-news" href="add-news.html") Xəbər əlavə et
+                                    i.material-icons add_circle_outline
+                                |
+                                |
+                                a(class="btn-custom force-update is-loading" href="#") Force RSS update
+                                    i.material-icons refresh
+                                |
+                                |
+                                p.update-error Error ocured #[a(href="#") go to link link]
+                        |
+                        |
+                        .news-filters
+                            form(action="#" method="GET" class="flex")
+                                .by-day
+                                    .form-group.select
+                                        label Tarix
+                                        select(class="form-control")
+                                            option(value="0") Son 30 gün
+                                            option(value="1") Son 14 gün
+                                            option(value="2") Son 7 gün
+                                // By Day
+                                |
+                                |
+                                .by-website
+                                    .form-group.select
+                                        label Sayt
+                                        select(class="form-control")
+                                            option(value="0") Bütün xeberler
+                                            option(value="1") report.az
+                                            option(value="2") news.ru
+                                // By Website
+                                |
+                                |
+                                .search-filter.hidden-991
+                                    .form-group
+                                        label Axtarış
+                                        input(type="text" class="form-control")
+                                // Search Filter
+                                |
+                                |
+                                .news-lang
+                                    .form-group.select
+                                        label Dil
+                                        select(class="form-control")
+                                            option(value="0") AZ
+                                            option(value="1") EN
+                                            option(value="2") RU
+                                |
+                                |
+                                .num-to-show
+                                    .form-group.select
+                                        label Görsətmə sayı
+                                        select(class="form-control")
+                                            option(value="0") 50
+                                            option(value="1") 30
+                                            option(value="2") 10
+                                // Number To Show
+                                |
+                                |
+                                .filter-by
+                                    .form-group.select
+                                        label Çeşidləmə
+                                        select(class="form-control")
+                                            option(value="0") Tarixə görə
+                                            option(value="1") Baxish üzrə
+                        // News Filters
+                        |
+                        |
+                        .news-list
+                            .site.flex
+                                .info.flex
+                                    .image.hidden-575
+                                        a(href="#")
+                                            img(src=require("../../images/news/small0.png"))
+                                    |
+                                    |
+                                    .name-url
+                                        p.name
+                                            a(href="#") Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. 
+                                        p.url https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…
+                                |
+                                |
+                                .actions
+                                    .site-stat.text-center
+                                        p 235
+                                        p Keçid
+                                    |
+                                    |
+                                    .site-stat.text-center
+                                        p 3562
+                                        p Görsənmə
+                                    |
+                                    |
+                                    a(href="#" class="btn-delete detele-news")
+                                        i.material-icons highlight_off
+                            // Site
+                            |
+                            |
+                            .site.flex
+                                .info.flex
+                                    .image.hidden-575
+                                        img(src=require("../../images/news/small1.png"))
+                                    |
+                                    |
+                                    .name-url
+                                        p.name Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. 
+                                        p.url https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…
+                                |
+                                |
+                                .actions
+                                    .site-stat.text-center
+                                        p 235
+                                        p Keçid
+                                    |
+                                    |
+                                    .site-stat.text-center
+                                        p 3562
+                                        p Görsənmə
+                                    |
+                                    |
+                                    a(href="#" class="btn-delete detele-news")
+                                        i.material-icons highlight_off
+                            // Site
+                            |
+                            |
+                            .site.flex
+                                .info.flex
+                                    .image.hidden-575
+                                        img(src=require("../../images/news/small2.png"))
+                                    |
+                                    |
+                                    .name-url
+                                        p.name Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi.
+                                        p.url https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…
+                                |
+                                |
+                                .actions
+                                    .site-stat.text-center
+                                        p 235
+                                        p Keçid
+                                    |
+                                    |
+                                    .site-stat.text-center
+                                        p 3562
+                                        p Görsənmə
+                                    |
+                                    |
+                                    a(href="#" class="btn-delete detele-news")
+                                        i.material-icons highlight_off
+                            // Site
+                            |
+                            |
+                            .site.flex
+                                .info.flex
+                                    .image.hidden-575
+                                        img(src=require("../../images/news/small3.png"))
+                                    |
+                                    |
+                                    .name-url
+                                        p.name Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem.
+                                        p.url https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…
+                                |
+                                |
+                                .actions
+                                    .site-stat.text-center
+                                        p 235
+                                        p Keçid
+                                    |
+                                    |
+                                    .site-stat.text-center
+                                        p 3562
+                                        p Görsənmə
+                                    |
+                                    |
+                                    a(href="#" class="btn-delete detele-news")
+                                        i.material-icons highlight_off
+                            // Site
+                            |
+                            |
+                            .site.flex
+                                .info.flex
+                                    .image.hidden-575
+                                        img(src=require("../../images/news/small4.png"))
+                                    |
+                                    |
+                                    .name-url
+                                        p.name In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. 
+                                        p.url https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…
+                                |
+                                |
+                                .actions
+                                    .site-stat.text-center
+                                        p 235
+                                        p Keçid
+                                    |
+                                    |
+                                    .site-stat.text-center
+                                        p 3562
+                                        p Görsənmə
+                                    |
+                                    |
+                                    a(href="#" class="btn-delete detele-news")
+                                        i.material-icons highlight_off
+                            // Site
+                            |
+                            |
+                            .site.flex
+                                .info.flex
+                                    .image.hidden-575
+                                        img(src=require("../../images/news/small5.png"))
+                                    |
+                                    |
+                                    .name-url
+                                        p.name Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi.
+                                        p.url https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…
+                                |
+                                |
+                                .actions
+                                    .site-stat.text-center
+                                        p 235
+                                        p Keçid
+                                    |
+                                    |
+                                    .site-stat.text-center
+                                        p 3562
+                                        p Görsənmə
+                                    |
+                                    |
+                                    a(href="#" class="btn-delete detele-news")
+                                        i.material-icons highlight_off
+                            // Site
+                            |
+                            |
+                            .site.flex
+                                .info.flex
+                                    .image.hidden-575
+                                        img(src=require("../../images/news/small6.png"))
+                                    |
+                                    |
+                                    .name-url
+                                        p.name Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem.
+                                        p.url https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…
+                                |
+                                |
+                                .actions
+                                    .site-stat.text-center
+                                        p 235
+                                        p Keçid
+                                    |
+                                    |
+                                    .site-stat.text-center
+                                        p 3562
+                                        p Görsənmə
+                                    |
+                                    |
+                                    a(href="#" class="btn-delete detele-news")
+                                        i.material-icons highlight_off
+                            // Site
+                            |
+                            |
+                            .site.flex
+                                .info.flex
+                                    .image.hidden-575
+                                        img(src=require("../../images/news/small7.png"))
+                                    |
+                                    |
+                                    .name-url
+                                        p.name In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. 
+                                        p.url https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…
+                                |
+                                |
+                                .actions
+                                    .site-stat.text-center
+                                        p 235
+                                        p Keçid
+                                    |
+                                    |
+                                    .site-stat.text-center
+                                        p 3562
+                                        p Görsənmə
+                                    |
+                                    |
+                                    a(href="#" class="btn-delete detele-news")
+                                        i.material-icons highlight_off
+                            // Site
+                            |
+                            |
+                            .site.flex
+                                .info.flex
+                                    .image.hidden-575
+                                        img(src=require("../../images/news/small8.png"))
+                                    |
+                                    |
+                                    .name-url
+                                        p.name Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. 
+                                        p.url https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…
+                                |
+                                |
+                                .actions
+                                    .site-stat.text-center
+                                        p 235
+                                        p Keçid
+                                    |
+                                    |
+                                    .site-stat.text-center
+                                        p 3562
+                                        p Görsənmə
+                                    |
+                                    |
+                                    a(href="#" class="btn-delete detele-news")
+                                        i.material-icons highlight_off
+                            // Site
+                            |
+                            |
+                            .site.flex
+                                .info.flex
+                                    .image.hidden-575
+                                        img(src=require("../../images/news/small9.png"))
+                                    |
+                                    |
+                                    .name-url
+                                        p.name Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. 
+                                        p.url https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…
+                                |
+                                |
+                                .actions
+                                    .site-stat.text-center
+                                        p 235
+                                        p Keçid
+                                    |
+                                    |
+                                    .site-stat.text-center
+                                        p 3562
+                                        p Görsənmə
+                                    |
+                                    |
+                                    .site-stat.text-center
+                                        p 0
+                                        p CTR
+                                    |
+                                    |
+                                    a(href="#" class="btn-dark detele-news")
+                                        i.material-icons arrow_upward
+                                    |
+                                    |
+                                    a(href="#" class="btn-delete detele-news")
+                                        i.material-icons highlight_off
+                            // Site
+                            |
+                            |
+                        // News List
+                        |
+                        |
+                        .news-pagination
+                            nav
+                                ul(class="pagination")
+                                    li(class="page-item")
+                                        a(class="page-link" href="#") «
+                                    li(class="page-item active")
+                                        a(class="page-link" href="#") 1
+                                    li(class="page-item")
+                                        a(class="page-link" href="#") 2
+                                    li(class="page-item")
+                                        a(class="page-link" href="#") 3
+                                    li(class="page-item")
+                                        a(class="page-link" href="#") »
+                        // News pagination
+    // News List Page
+    |
+    |

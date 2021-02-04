@@ -1,0 +1,817 @@
+ <!DOCTYPE html>
+<html class="no-js cyan-color" xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://schema.org/WebPage"  lang="ru" xml:lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Media.az - Новости Азербайджана</title>
+	<meta property="fb:admins" content="100000786574968"/>
+	<meta property="fb:admins" content="100028792893697"/>
+	<meta property="fb:app_id" content="189966378482888"/>
+	<meta property="fb:pages" content="280772835787181">
+	<meta property="fb:pages" content="237085196644930" />
+	<meta name="description" content="Политика, экономика, обшество, в мире, происшествие, аналитика, интервью, спорт, культура, наука и технология, религия, интересное, видео и фотографииПолитика, экономика, обшество, в мире, происшествие, аналитика, интервью, спорт, культура, наука и технология, религия, интересное, видео и фотографии на media.az, новости баку, Азербайджан" />
+	<meta name="keywords" content="азербайджан новости, новая эпоха, политика, экономика, обшество, в мире, происшествие, аналитика, интервью, спорт, культура, наука и технология, религия, интересное, видео и фотографииполитика, экономика, обшество, в мире, происшествие, аналитика, интервью, спорт, культура, наука и технология, религия, интересное, видео и фотографии, новости баку, Новости Азербайджана, Азербайджан, землетрясение в баку, best model of azerbaijan 2018, азербайджан"/>
+	<meta property="og:url" content="https://media.az/"/>
+	<meta property="og:site_name" content="Media.Az"/>
+	<meta property="og:title" itemprop="name" content="Новости Азербайджана"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" itemprop="image" content="https://media.az/theme/frontend/new/style/default/images/logo-share.png"/>
+	<meta content="300" http-equiv="refresh" />
+	<meta name="revisit-after" content="30 days">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+	<link href="https://media.az/theme/frontend/new/style/default/images/favicon.ico?v=e88eae816b357765625739c104160141" rel="apple-touch-icon" sizes="192x192"/>
+	<link href="https://media.az/theme/frontend/new/style/default/images/favicon.ico?v=e88eae816b357765625739c104160141" rel="icon" sizes="192x192" type="image/png"/>
+	<link rel="shortcut icon" type="image/x-icon" href="https://media.az/theme/frontend/new/style/default/images/favicon.ico?v=e88eae816b357765625739c104160141"/>
+	<link rel="shortcut icon" href="https://media.az/theme/frontend/new/style/default/images/favicon.ico?v=e88eae816b357765625739c104160141" />
+	<link media="screen" href="/static/min/?g=maincss&charset=utf-8&v=19.01.20203" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="/static/min/?g=mainjs&charset=utf-8&v=19.01.22020"></script>
+	<script async="async" src="//platform-api.sharethis.com/js/sharethis.js#property=5abfa2db1fff98001395aa1a&amp;product=inline-share-buttons"></script>
+	<link rel="sitemap" type="application/xml" href="//media.az/sitemap" />
+	<link rel="alternate" type="application/rss+xml" href="https://media.az/feed/" />
+	<meta name="google-site-verification" title="Media.az - Новости Азербайджана" content="EWc813XN29T8cfwMkWiGmT1WD4hOxRhzyDorlul6G60" />
+	<meta name="yandex-verification" content="d070c8c32cdb5b17" />
+	<meta name="msapplication-TileColor" content="#bb1919">
+	<meta name="msapplication-TileImage" content="https://media.az/theme/frontend/new/style/default/images/favicon.ico">
+	<meta name="theme-color" content="#bb1919">
+	<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/media.az\/","name":"Ana S\u0259hif\u0259"}}]}</script>
+	<script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","name":"Media.az - Новости Азербайджана","alternateName":"Media.az - Новости Азербайджана","url":"https://media.az/","potentialAction":{"@type":"SearchAction","target":"https://media.az/all/?query={search_term_string}","query-input":"required name=search_term_string"}}</script>
+	<script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"MediaAz.Az","url":"https://media.az/","logo":"https://media.az/","founder":"Hamid Hamidov","foundingDate":"2006-02-01","foundingLocation":"Azerbaijan","sameAs":["https://www.facebook.com/www.media.az","https://twitter.com/MediaAz1","https://instagram.com/media.az_news","https://t.me/mediaaz1"],"contactPoint":[{"@type":"ContactPoint","telephone":"+994554811648","contactType":"customer support","contactOption":"TollFree","areaServed":"AZ","availableLanguage":"Azerbaijani"}]}</script>
+	
+
+	<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(51996845, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <!-- /Yandex.Metrika counter -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145282108-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-145282108-1');
+	</script>
+	
+	<script data-ad-client="ca-pub-7255423851271016" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body title="Media.az - Новости Азербайджана">
+
+<div class="x-sayt">
+
+	<header class="header">
+		<div class="header-row">
+			<div class="header-row-wrap">
+				<div class="nav-toggle m-menu"><div class="toggle-btn"></div></div>
+				<div class="logo">
+					<a class="logo-link" href="//media.az/"></a>
+				</div>
+				<div class="search-container">
+					<form action="//media.az/all/">
+						<input class="search-input" name="query" placeholder="Поиск" type="search"/>
+					</form>
+					<div class="search-toggle" title="Поиск">
+					</div>
+				</div>
+				<div class="engage header-engage">
+					<a class="engage-i engage-i_facebook" target="_blank" href="//facebook.com/www.media.az">Facebook</a><a class="engage-i engage-i_twitter" target="_blank" href="https://twitter.com/MediaAz1">Twitter</a><a class="engage-i engage-i_instagram" target="_blank" href="https://instagram.com/media.az_news">Instagram</a><a class="engage-i engage-i_telegram" target="_blank" href="https://t.me/mediaaz1">Telegram</a>
+				</div>
+			</div>
+		</div>
+		<div class="aside-block">
+			<div class="row">
+				<div class="toggle-btn m-close">
+				</div>
+				<div class="menu-aside_logo">
+					<img src="/theme/frontend/new/style/default/images/main-logo-white.svg" alt="Main logo white">
+				</div>
+			</div>
+			<ul class="menu-aside">
+				<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/">Главная</a></li>
+								<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/category/politics/">Политика</a></li>
+				<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/category/economy/">Экономика</a></li>
+				<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/category/society/">Общество</a></li>
+				<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/category/showbiz/">Шоу-бизнес</a></li>
+				<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/category/sports/">Спорт</a></li>
+				<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/category/culture/">Культура</a></li>
+				<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/category/world/">Мир вокруг</a></li>
+				<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/category/interesting/">Это интересно</a></li>
+				<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/category/important/">Важное вокруг</a></li>
+				<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/category/interview/">Интервью</a></li>
+
+
+				<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/all/">АРХИВ</a></li>
+				<li class="menu-aside-item"><a class="menu-aside-link" href="//media.az/contact/">Контакты</a></li>
+
+
+
+
+				<li class="social">
+				<p class="engage aside-engage">
+					<a class="engage-i engage-i_facebook" target="_blank" href="//facebook.com/www.media.az">Facebook</a><a class="engage-i engage-i_twitter" target="_blank" href="https://twitter.com/MediaAz1">Twitter</a><a class="engage-i engage-i_instagram" target="_blank" href="https://instagram.com/media.az1">Instagram</a><a class="engage-i engage-i_telegram" target="_blank" href="https://t.me/mediaaz1">Telegram</a>
+				</p>
+				<p class="copyright">
+					Copyright info
+				</p>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container">
+<div id="site_content"><div class="page-row">
+	<div class="main-content">
+		<section class="main-news">
+			<div class="main-news-wrap">
+				<div class="main-news-item">
+					<a href="//media.az/society/1067778152/v-azerbaydzhane-predlagaetsya-vyplachivat-190-manatov-i-v-iyune/" title="В Азербайджане предлагается рассмотреть вопрос выдачи единовременного пособия в июне" target="_blank">
+					<div class="news-image">
+						<img src="https://media.az/photo/880x550/2020/05/31/1590913207_20.jpg?v2?v2" title="В Азербайджане предлагается рассмотреть вопрос выдачи единовременного пособия в июне" alt="В Азербайджане предлагается рассмотреть вопрос выдачи единовременного пособия в июне"/>
+						<div class="gradient-overlay">
+						</div>
+					</div>
+					<div class="news-title">
+						<h2 class="news-heading red bold">В Азербайджане предлагается рассмотреть вопрос выдачи единовременного пособия в июне</h2>
+					</div>
+					</a>
+				</div>
+				<div class="main-news-item">
+					<a href="//media.az/interesting/1067778128/po-centru-sheki-razgulivaet-buryy-medved-video/" title="Медведя доставят в Центр реабилитации дикой природы - ФОТО/ВИДЕО/ОБНОВЛЕНО" target="_blank">
+					<div class="news-image">
+						<img src="https://media.az/photo/880x550/2020/05/31/1590902849_4.jpeg?v2?v2" title="Медведя доставят в Центр реабилитации дикой природы - ФОТО/ВИДЕО/ОБНОВЛЕНО" alt="Медведя доставят в Центр реабилитации дикой природы - ФОТО/ВИДЕО/ОБНОВЛЕНО"/>
+						<div class="gradient-overlay">
+						</div>
+					</div>
+					<div class="news-title">
+						<h2 class="news-heading red bold">Медведя доставят в Центр реабилитации дикой природы - ФОТО/ВИДЕО/ОБНОВЛЕНО</h2>
+					</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="main-news">
+			<div class="main-news-item big">
+				<a href="//media.az/economy/1067778056/na-voprosy-mediaaz-otvechaet-gendirektor-socar-energy-ukraine-elchin-mamedov/" target="_blank">
+				<div class="news-image">
+					<img src="https://media.az/photo/880x470/2020/05/30/1590827602_e_mamedov.jpg" title="Как SOCAR освоил рынок Украины. Интервью Media.Az с гендиректором SOCAR Energy Ukraine Эльчином Мамедовым" alt="Как SOCAR освоил рынок Украины. Интервью Media.Az с гендиректором SOCAR Energy Ukraine Эльчином Мамедовым">
+					<div class="gradient-overlay">
+					</div>
+				</div>
+				<div class="news-title">
+					<h2 class="news-heading red bold">Как SOCAR освоил рынок Украины. Интервью Media.Az с гендиректором SOCAR Energy Ukraine Эльчином Мамедовым</h2>
+				</div>
+				</a>
+			</div>
+			<div class="special-news">		
+				<h1>Выбор читателей<i></i></h1>
+				<div class="special-news-wrap"> 
+					<div class="right-sidebar_feed scrollbar-inner">
+
+						<div class="right-sidebar_item">
+							<div class="right-sidebar_number">
+1							</div>
+							<div class="right-sidebar_short-info">
+								<a  class="right-sidebar_news-title red bold" href="//media.az/society/1067777958/utverzhden-spisok-mest-dlya-obyazatelnogo-nosheniya-masok/" target="_blank">Утвержден список мест для обязательного ношения масок</a><span class="views">8166 просмотров</span>
+							</div>
+						</div>
+
+						<div class="right-sidebar_item">
+							<div class="right-sidebar_number">
+2							</div>
+							<div class="right-sidebar_short-info">
+								<a  class="right-sidebar_news-title red bold" href="//media.az/society/1067777846/minekologii-azerbaydzhana-predupredilo-naselenie-v-svyazi-s-izmeneniyami-pogodnyh-usloviy/" target="_blank">Минэкологии Азербайджана предупредило население в связи с изменениями погодных условий</a><span class="views">4030 просмотров</span>
+							</div>
+						</div>
+
+						<div class="right-sidebar_item">
+							<div class="right-sidebar_number">
+3							</div>
+							<div class="right-sidebar_short-info">
+								<a  class="right-sidebar_news-title red bold" href="//media.az/economy/1067777954/v-azerbaydzhane-sozdana-sistema-obschestvennogo-kontrolya-v-ramkah-borby-s-koronavirusom/" target="_blank">В Азербайджане создана система общественного контроля в рамках борьбы с коронавирусом</a><span class="views">3326 просмотров</span>
+							</div>
+						</div>
+
+						<div class="right-sidebar_item">
+							<div class="right-sidebar_number">
+4							</div>
+							<div class="right-sidebar_short-info">
+								<a  class="right-sidebar_news-title red bold" href="//media.az/society/1067777953/zakrytie-gosudarstvennoy-granicy-azerbaydzhana-prodleno-do-15-iyunya-2020-goda/" target="_blank">Срок закрытия госграницы Азербайджана продлили</a><span class="views">3247 просмотров</span>
+							</div>
+						</div>
+
+						<div class="right-sidebar_item">
+							<div class="right-sidebar_number">
+5							</div>
+							<div class="right-sidebar_short-info">
+								<a  class="right-sidebar_news-title " href="//media.az/society/1067778046/stalo-izvetsno-kogda-budet-otkryt-turisticheskiy-sezon-v-azerbaydzhane/" target="_blank">Стало известно, когда будет открыт туристический сезон в Азербайджане</a><span class="views">3200 просмотров</span>
+							</div>
+						</div>
+
+						<div class="right-sidebar_item">
+							<div class="right-sidebar_number">
+6							</div>
+							<div class="right-sidebar_short-info">
+								<a  class="right-sidebar_news-title " href="//media.az/society/1067778009/na-territorii-azerbaydzhana-ozhidayutsya-livni-i-grad/" target="_blank">На территории Азербайджана ожидаются ливни и град</a><span class="views">2770 просмотров</span>
+							</div>
+						</div>
+
+						<div class="right-sidebar_item">
+							<div class="right-sidebar_number">
+7							</div>
+							<div class="right-sidebar_short-info">
+								<a  class="right-sidebar_news-title red bold" href="//media.az/society/1067777980/vpervye-sutochnyy-prirost-inficirovannyh-covid-19-v-azerbaydzhane-prevysil-200-chelovek/" target="_blank">Впервые суточный прирост инфицированных COVID-19 в Азербайджане превысил 200 человек</a><span class="views">2544 просмотров</span>
+							</div>
+						</div>
+
+						<div class="right-sidebar_item">
+							<div class="right-sidebar_number">
+8							</div>
+							<div class="right-sidebar_short-info">
+								<a  class="right-sidebar_news-title red bold" href="//media.az/society/1067778062/stali-izvestny-predlagaemye-summy-shtrafov-za-nenoshenie-masok/" target="_blank">Стали известны предлагаемые суммы штрафов за неношение масок</a><span class="views">2474 просмотров</span>
+							</div>
+						</div>
+
+						<div class="right-sidebar_item">
+							<div class="right-sidebar_number">
+9							</div>
+							<div class="right-sidebar_short-info">
+								<a  class="right-sidebar_news-title " href="//media.az/society/1067778002/ibragim-mamedov-ob-otkrytii-detskih-sadov/" target="_blank">Ибрагим Мамедов об открытии детских садов</a><span class="views">2217 просмотров</span>
+							</div>
+						</div>
+
+						<div class="right-sidebar_item">
+							<div class="right-sidebar_number">
+10							</div>
+							<div class="right-sidebar_short-info">
+								<a  class="right-sidebar_news-title " href="//media.az/society/1067777961/stalo-izvestno-kakie-pravila-budut-deystvovat-v-samoletah-v-period-i-posle-pandemii/" target="_blank">Стало известно, какие правила будут действовать в самолетах в период и после пандемии</a><span class="views">2033 просмотров</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="adr-bottom">
+			<a href="#" style="display:none;"><img alt="Reklam" src="/theme/frontend/new/style/default/images/reklam/adr-bottom.png?v1"></a>
+			
+
+		</div>
+		<div class="section-row no-margin">
+			<div class="row-elements mleft">
+				<div class="content-big content-x">				
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/economy/1067778154/obnarodovana-summarnaya-zadolzhennost-po-nalogam-zakrytyh-bankov-azerbaydzhana/" title="Обнародована суммарная задолженность по налогам закрытых банков Азербайджана" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590913965_190-mannat-1.jpg?v2" title="Обнародована суммарная задолженность по налогам закрытых банков Азербайджана" alt="Обнародована суммарная задолженность по налогам закрытых банков Азербайджана"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Экономика</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading ">Обнародована суммарная задолженность по налогам закрытых банков Азербайджана</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 12:32</span><span class="views">10</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/society/1067778152/v-azerbaydzhane-predlagaetsya-vyplachivat-190-manatov-i-v-iyune/" title="В Азербайджане предлагается рассмотреть вопрос выдачи единовременного пособия в июне" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590913207_20.jpg?v2" title="В Азербайджане предлагается рассмотреть вопрос выдачи единовременного пособия в июне" alt="В Азербайджане предлагается рассмотреть вопрос выдачи единовременного пособия в июне"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Общество</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading red bold">В Азербайджане предлагается рассмотреть вопрос выдачи единовременного пособия в июне</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 12:26</span><span class="views">30</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/society/1067778153/minobrazovaniya-azerbaydzhana-oglasilo-kolichestvo-pooschritelnyh-mest-dlya-uchiteley/" title="Минобразования Азербайджана огласило количество поощрительных мест для учителей" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590913220_teacher_exam_190718__1.jpg?v2" title="Минобразования Азербайджана огласило количество поощрительных мест для учителей" alt="Минобразования Азербайджана огласило количество поощрительных мест для учителей"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Общество</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading ">Минобразования Азербайджана огласило количество поощрительных мест для учителей</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 12:20</span><span class="views">28</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/politics/1067778151/v-parlamente-predlozhili-razrabotat-zakon-o-socsetyah/" title="В парламенте предложили разработать закон о соцсетях" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590912869_7.jpg?v2" title="В парламенте предложили разработать закон о соцсетях" alt="В парламенте предложили разработать закон о соцсетях"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Политика</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading ">В парламенте предложили разработать закон о соцсетях</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 12:14</span><span class="views">44</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/society/1067778149/v-gusare-na-detey-upal-kamennyy-zabor-est-pogibshiy/" title="В Гусаре на детей упал каменный забор, есть погибший" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590912374_16.jpg?v2" title="В Гусаре на детей упал каменный забор, есть погибший" alt="В Гусаре на детей упал каменный забор, есть погибший"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Общество</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading ">В Гусаре на детей упал каменный забор, есть погибший</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 12:08</span><span class="views">46</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/politics/1067778148/utverzhdeny-chetyre-dokumenta-mezhdu-azerbaydzhanom-i-turciey/" title="Утверждены четыре документа между Азербайджаном и Турцией" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590911842_15.jpg?v2" title="Утверждены четыре документа между Азербайджаном и Турцией" alt="Утверждены четыре документа между Азербайджаном и Турцией"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Политика</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading ">Утверждены четыре документа между Азербайджаном и Турцией</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 12:02</span><span class="views">40</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/society/1067778147/v-baku-22-letnyaya-devushka-otravilas-ugarnym-gazom/" title="В Баку 22-летняя девушка отравилась угарным газом" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590911825_istock-9381589561_d_850.jpg?v2" title="В Баку 22-летняя девушка отравилась угарным газом" alt="В Баку 22-летняя девушка отравилась угарным газом"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Общество</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading ">В Баку 22-летняя девушка отравилась угарным газом</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 11:56</span><span class="views">43</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/interesting/1067778128/po-centru-sheki-razgulivaet-buryy-medved-video/" title="Медведя доставят в Центр реабилитации дикой природы - ФОТО/ВИДЕО/ОБНОВЛЕНО" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590902849_4.jpeg?v2" title="Медведя доставят в Центр реабилитации дикой природы - ФОТО/ВИДЕО/ОБНОВЛЕНО" alt="Медведя доставят в Центр реабилитации дикой природы - ФОТО/ВИДЕО/ОБНОВЛЕНО"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Это интересно</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading red bold">Медведя доставят в Центр реабилитации дикой природы - ФОТО/ВИДЕО/ОБНОВЛЕНО</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 11:50</span><span class="views">569</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/politics/1067778146/na-plenarnoe-zasedanie-milli-medzhlisa-deputaty-prishli-v-maskah/" title="На пленарное заседание Милли меджлиса депутаты пришли в масках" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590911102_neb.jpg?v2" title="На пленарное заседание Милли меджлиса депутаты пришли в масках" alt="На пленарное заседание Милли меджлиса депутаты пришли в масках"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Политика</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading ">На пленарное заседание Милли меджлиса депутаты пришли в масках</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 11:45</span><span class="views">39</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/society/1067778145/ata-abdullaeva-izbili-v-pryamom-efire-video/" title="Ата Абдуллаева избили в прямом эфире - ВИДЕО" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590910674_1574345052_untitled-1.jpg?v2" title="Ата Абдуллаева избили в прямом эфире - ВИДЕО" alt="Ата Абдуллаева избили в прямом эфире - ВИДЕО"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Общество</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading ">Ата Абдуллаева избили в прямом эфире - ВИДЕО</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 11:40</span><span class="views">125</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/economy/1067778056/na-voprosy-mediaaz-otvechaet-gendirektor-socar-energy-ukraine-elchin-mamedov/" title="Как SOCAR освоил рынок Украины. Интервью Media.Az с гендиректором SOCAR Energy Ukraine Эльчином Мамедовым" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/30/1590827602_e_mamedov.jpg?v2" title="Как SOCAR освоил рынок Украины. Интервью Media.Az с гендиректором SOCAR Energy Ukraine Эльчином Мамедовым" alt="Как SOCAR освоил рынок Украины. Интервью Media.Az с гендиректором SOCAR Energy Ukraine Эльчином Мамедовым"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Экономика</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading red bold">Как SOCAR освоил рынок Украины. Интервью Media.Az с гендиректором SOCAR Energy Ukraine Эльчином Мамедовым</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 11:35</span><span class="views">96</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/society/1067778144/delo-o-smerti-studentki-bgu-vrach-skoroy-pomoschi-predstanet-pered-sudom/" title="Дело о смерти студентки БГУ: врач скорой помощи предстанет перед судом" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590910348_14.jpg?v2" title="Дело о смерти студентки БГУ: врач скорой помощи предстанет перед судом" alt="Дело о смерти студентки БГУ: врач скорой помощи предстанет перед судом"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Общество</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading red bold">Дело о смерти студентки БГУ: врач скорой помощи предстанет перед судом</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 11:28</span><span class="views">253</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/society/1067778143/v-beylagane-muzhchina-napal-s-toporom-na-byvshuyu-zhenu/" title="В Бейлагане мужчина напал с топором на бывшую жену" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590909881__23-2148315345.jpg?v2" title="В Бейлагане мужчина напал с топором на бывшую жену" alt="В Бейлагане мужчина напал с топором на бывшую жену"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Общество</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading ">В Бейлагане мужчина напал с топором на бывшую жену</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 11:22</span><span class="views">62</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/society/1067778142/nurida-allahyarova-taksi-mogut-rabotat-lish-pri-nalichii-znaka-otlichiya-i-prozrachnyh-peregorodok/" title="Нурида Аллахъярова: Такси могут работать лишь при наличии знака отличия и прозрачных перегородок" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590908865_taxi153573422.jpg?v2" title="Нурида Аллахъярова: Такси могут работать лишь при наличии знака отличия и прозрачных перегородок" alt="Нурида Аллахъярова: Такси могут работать лишь при наличии знака отличия и прозрачных перегородок"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Общество</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading ">Нурида Аллахъярова: Такси могут работать лишь при наличии знака отличия и прозрачных перегородок</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 11:10</span><span class="views">56</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+					
+
+						
+						
+						
+					<div class="ct-item">
+						<a class="content-news-item" href="//media.az/society/1067778141/sotrudniki-milli-medzhlisa-prohodyat-test-na-covid-19/" title="Сотрудники Милли меджлиса проходят тест на COVID-19" target="_blank">
+							<div class="news-image">
+								<img itemprop="image" src="https://media.az/photo/680x400/2020/05/31/1590908520_46787c4e-0506-4ed1-bd35-8c3ae3aaef86.jpg?v2" title="Сотрудники Милли меджлиса проходят тест на COVID-19" alt="Сотрудники Милли меджлиса проходят тест на COVID-19"/>
+							</div>
+							<div class="category">
+								<span class="category-title">Общество</span>
+							</div>
+							<div class="content-news-title c-x">
+								<h2 itemprop="name" class="news-heading ">Сотрудники Милли меджлиса проходят тест на COVID-19</h2>
+							</div>
+							<div class="quick-info">
+								<div class="row">
+									<span class="datetime">31.05.2020 11:05</span><span class="views">88</span>
+								</div>
+							</div>
+						</a>
+						
+
+		
+						
+						
+						
+					</div>			
+				</div>
+				
+				
+		
+						
+						
+				<div class="x-nav"><a class="pagination__next" href="/all-infinity/?page=2"></a></div>
+				<div class="scroller-status">
+				  <div class="loader-ellips infinite-scroll-request">
+					<span class="loader-ellips__dot"></span>
+					<span class="loader-ellips__dot"></span>
+					<span class="loader-ellips__dot"></span>
+					<span class="loader-ellips__dot"></span>
+				  </div>
+				  <p class="scroller-status__message infinite-scroll-last">End of content</p>
+				  <p class="scroller-status__message infinite-scroll-error">No more pages to load</p>
+				</div>
+<div class="m-button more-post"><a href="#">ЕЩЕ НОВОСТИ</a></div>			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function(){
+	
+		var $viewMoreButton = $('.more-post');
+		$viewMoreButton.on( 'click', function(e) {
+			e.preventDefault();
+			var $container = $('.content-big').infiniteScroll({
+				path: '.pagination__next',
+				append: '.ct-item',
+				status: '.scroller-status',
+				history: false,
+				debug: false,
+				loadOnScroll: false
+			});
+
+			$container.infiniteScroll('loadNextPage');
+			$container.infiniteScroll( 'option', {
+				loadOnScroll: true
+			});
+			$viewMoreButton.hide();
+		});
+	});
+</script>
+
+
+
+
+<script>
+	$(document).ready(function(){
+		$('.content-big').on( 'load.infiniteScroll', function(){ 
+		setTimeout(function(){ 
+			var t = $(".content-x"),
+				e = t.find(".c-x h2"),
+				n = function() {
+					e.css("height", "auto");
+					var n = Math.floor(t.width() / e.width());
+					if (null == n || n < 2) return !0;
+					for (var i = 0, r = e.length; i < r; i += n) {
+						var o = 0,
+							s = e.slice(i, i + n);
+						s.each(function() {
+							var t = parseInt($(this).outerHeight());
+							t > o && (o = t)
+						}), s.css("height", o)
+					}
+				};
+				n()
+		}, 1000) 
+
+		});
+	});
+</script>
+
+</div>	</div>
+	<footer class="main-footer">
+	<div class="container">
+		<div class="footer-row">
+			<div class="footer-logo">
+				<img src="/theme/frontend/new/style/default/images/main-logo-white.svg" alt="Main logo white"/>
+			</div>
+			<nav class="footer-nav">
+			<ul class="footer-nav_list">
+								<li class="footer-nav_item"><a class="footer-nav_link" href="//media.az/category/politics/">Политика </a></li>
+				<li class="footer-nav_item"><a class="footer-nav_link" href="//media.az/category/economy/">Экономика </a></li>
+				<li class="footer-nav_item"><a class="footer-nav_link" href="//media.az/category/society/">Общество </a></li>
+				<li class="footer-nav_item"><a class="footer-nav_link" href="//media.az/category/showbiz/">Шоу-бизнес </a></li>
+				<li class="footer-nav_item"><a class="footer-nav_link" href="//media.az/category/sports/">Спорт </a></li>
+				<li class="footer-nav_item"><a class="footer-nav_link" href="//media.az/category/culture/">Культура </a></li>
+				<li class="footer-nav_item"><a class="footer-nav_link" href="//media.az/category/world/">Мир вокруг </a></li>
+			</ul>
+			</nav>
+		</div>
+		<div class="footer-row bottom">
+			<a class="about-us" href="/about" style="display:none;">О нас</a>
+			<div class="engage footer-engage">
+				<a class="engage-i engage-i_facebook" target="_blank" href="//facebook.com/www.media.az">Facebook</a><a class="engage-i engage-i_twitter" target="_blank" href="https://twitter.com/MediaAz1">Twitter</a><a class="engage-i engage-i_instagram" target="_blank" href="https://instagram.com/media.az1">Instagram</a><a class="engage-i engage-i_telegram" target="_blank" href="https://t.me/mediaaz1">Telegram</a>
+			</div>
+			<div id="LiveInternetMedia">
+				<!--LiveInternet counter-->
+				<!--<script type="text/javascript">
+				document.write('<a href="//www.liveinternet.ru/click" '+
+				'target="_blank"><img src="//counter.yadro.ru/hit?t29.1;r'+
+				escape(document.referrer)+((typeof(screen)=='undefined')?'':
+				';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+				screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+				';h'+escape(document.title.substring(0,150))+';'+Math.random()+
+				'" alt="" title="LiveInternet: показано количество просмотров и'+
+				' посетителей" '+
+				'border="0" width="88" height="120"><\/a>')
+				</script>-->
+				<!--/LiveInternet-->
+			</div>
+		</div>
+	</div>
+	</footer>
+	<script type="text/javascript" src="/static/min/?g=footerjs&charset=utf-8&v=3232"></script>
+</div>
+
+
+<ins data-revive-videowidth="640" data-revive-videoheight="auto" data-revive-zoneid="926" data-revive-id="ac32dd91205982a13d2787f486af04f0"></ins>
+<script async src="//ads2.newmedia.az/www/delivery/asyncjs.php"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+header.dashboard-header
+    .container
+        .row
+            .col-12
+                .inner.flex
+                    .menu-toggler.visible-991
+                        img(src=require("../../images/bars-white.svg"))
+                    |
+                    |
+                    .logo-links.flex
+                        .logo
+                            a(href="index.html")
+                                img(src=require("../../images/logo-white.svg"))
+                        |
+                        |
+                        ul.hidden-991
+                            li
+                                a(href="dashboard.html") Dashboard
+                            li
+                                a(href="sites.html") Saytarım
+                            li
+                                a(href="rss-validator.html") RSS Validator
+                    // Logo / Links
+                    |
+                    |
+                    .user-info.flex.hidden-575
+                        .add-website.hidden-991
+                            a(href="add-website.html" class="flex") 
+                                | Sayt əlavə et
+                                i.material-icons add_circle_outline
+                        |
+                        |
+                        .user.flex
+                            .actions
+                                p.name Hamzayev Farid
+                                |
+                                |
+                                a(href="edit-profile.html") Edit profile
+                            |
+                            |
+                            .user-image.cover-center(style="background-image: url("+ require("../../images/user.png") +")")
+                                .overlay.flex-center
+                                    a(href="javascript:void(0);" class="logout")
+                                        i.material-icons clear
+                        // User
+// Header
+|
+|
+.side-menu-wrapper
+    .close-menu
+        img(src=require("../../images/close.svg"))
+    |
+    |
+    .side-menu
+        .user.flex
+            .actions
+                p.name John Doe
+                |
+                |
+                a(href="#") Edit profile
+            |
+            |
+            .user-image.cover-center(style="background-image: url("+ require("../../images/user.png") +")")
+                .overlay.flex-center
+                    a(href="javascript:void(0);" class="logout")
+                        i.material-icons clear
+        // User
+        |
+        |
+        ul.dashboard-links
+            li
+                a(href="dashboard.html") Dashboard
+            li
+                a(href="sites.html") Saytarım
+        |
+        |
+        .add-website
+            a(href="add-site.html" class="flex") 
+                | Sayt əlavə et
+                i.material-icons add_circle_outline
+// Side menu wrapper
+|
+|

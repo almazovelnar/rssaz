@@ -1,0 +1,128 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden !important;
+}
+
+body {
+    font-size: 16px;
+    letter-spacing: .4px;
+    font-family: "Montserrat Medium", sans-serif;
+    color: #4a4a4a;
+}
+
+.content {
+    min-height: calc(100vh - 120px);
+    padding-top: 55px;
+}
+
+h1, h2, h3, h4, h5, h6, p, hr {
+    margin: 0;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #474747;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    width: auto;
+    line-height: 0;
+    margin: 0;
+}
+
+/* ***** -- bootstrap ***** */
+.form-group {
+    position: relative;
+    margin: 0 0 13px 0;
+
+    .form-group {
+        margin: 0;
+    }
+
+    .form-control {
+        height: auto;
+        border-radius: 5px;
+        border: 1px solid #e8e8e8;
+        padding: 16px;
+        background: none;
+        
+        &:focus {
+            box-shadow: none;
+            border-color: #4a4a4a;
+            background: #f7f7f7;
+        }
+    }
+
+    ::-webkit-input-placeholder {
+        color: #474747;
+    }
+    ::-moz-placeholder {
+        color: #474747;
+    }
+    :-ms-input-placeholder {
+        color: #474747;
+    }
+    :-moz-placeholder {
+        color: #474747;
+    }
+}
+
+.form-group.select {
+    &:before {
+        content: "\f107";
+        font-family: "fontello";
+        position: absolute;
+        top: 5px;
+        right: 18px;
+        opacity: .5;
+        font-size: 19px;
+    }
+
+    .form-control {
+        padding-right: 43px;
+    }
+}
+
+select.form-control {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}

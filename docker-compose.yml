@@ -1,0 +1,106 @@
+version: '3'
+
+networks:
+  rss:
+
+volumes:
+  elasticsearch_data:
+  clickhouse_data:
+  mysql_data:
+  redis_data:
+
+services:
+
+  nginx:
+    image: nginx:stable-alpine
+    container_name: nginx
+    volumes:
+      - .:/var/www/html
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+      - clickhouse
+      - mysql
+    ports:
+      - "8080:80"
+    networks:
+      - rss
+
+  mysql:
+    image: mysql:5.7.22
+    container_name: mysql
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
+    environment:
+      - MYSQL_DATABASE=rss
+      - MYSQL_ROOT_PASSWORD=secret
+      - SERVICE_NAME=mysql
+      - TZ=Asia/Baku
+    networks:
+      - rss
+
+  php:
+    build:
+      context: ./docker/php
+      dockerfile: Dockerfile
+    container_name: php-fpm
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "9000:9000"
+    networks:
+      - rss
+
+  elasticsearch:
+    build:
+      context: ./docker/elastic
+      dockerfile: Dockerfile
+    container_name: elasticsearch
+    restart: unless-stopped
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - rss
+
+  clickhouse:
+    build:
+      context: ./docker/clickhouse
+      dockerfile: Dockerfile
+    container_name: clickhouse
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+    environment:
+      - TZ=Asia/Baku
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8123:8123"
+    networks:
+      - rss
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    volumes:
+      - redis_data:/data
+    ports:
+      - "127.0.0.1:6379:6379"
+    networks:
+      - rss
+
+  npm:
+    image: node:12.16.3
+    container_name: npm
+    working_dir: /var/www/html/cabinet/resources/
+    entrypoint: ["npm"]
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - rss

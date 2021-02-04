@@ -1,0 +1,294 @@
+extends ../layout/dashboard-layout.pug
+
+block content
+    section.diagnostics-page
+        .container
+            .row
+                .col
+                    .white-panel
+                        .title-links.flex
+                            h2.block-title Diaqnostika
+                            |
+                            |
+                            .links.flex
+                                |
+                                |
+                                a(class="btn-custom btn-restore" href="generate-code.html") Validate
+                                    i.material-icons cached
+                        |
+                        |
+                        .diagnostics-info
+                            ="\n"
+                            a(href="https://report.az/rss/project" target="_blank") https://report.az/rss/project
+                            p
+                                strong RSS downloaded:
+                                | 129 422
+                            p
+                                strong Added:
+                                | 19.10.2019, 12:44
+                        |
+                        |
+                        // Diagnostics info
+                        |
+                        |
+                        .filters-group
+                            form(action="#" method="GET" class="flex")
+                                .by-date
+                                    .form-group
+                                        label Tarixə qörə
+                                        input(class="form-control range" type="text" name="dates")
+                                // By Date
+                                |
+                                |
+                                .by-rss
+                                    .form-group.select
+                                        label RSS-ə qörə
+                                        select(class="form-control")
+                                            option(value="0") Bütün saytlar
+                                            option(value="1") report.az
+                                            option(value="2") news.ru
+                                // By RSS
+                        // Filters Group
+                        |
+                        |
+                        .diagnostics-content
+                            .diagnostics-table.x6-cell
+                                .t-row.flex
+                                    .t-cell Time
+                                    .t-cell Status
+                                    .t-cell Success
+                                    .t-cell Errors
+                                    .t-cell Warnings
+                                    .t-cell Fatal
+                                |
+                                |
+                                .t-row
+                                    .flex(data-toggle="collapse" data-target="#v-result0" aria-expanded="true")
+                                        .t-cell
+                                            p.time 00:31
+                                        .t-cell
+                                            p.status.warning Update warning
+                                        .t-cell
+                                            ="\n"
+                                            span 0
+                                        .t-cell
+                                            ="\n"
+                                            span 0
+                                        .t-cell
+                                            ="\n"
+                                            span 1
+                                        .t-cell
+                                            ="\n"
+                                            span 0
+                                    |
+                                    |
+                                    .collapse.show(id="v-result0")
+                                        .v-response
+                                            p.v-message Errors were found during the RCC update. Some pages may not be displayed or displayed incorrectly.
+                                            .v-info
+                                                strong Last file validation
+                                                p Total pages: 49
+                                                p Correct ones: 48
+                                                p With warnings: 1
+                                            // Validation info
+                                            .detailed-response
+                                                .errors-counter
+                                                    div.active 1 warning
+                                                    div no errors
+                                                    div fatal
+                                                |
+                                                |
+                                                .response-code
+                                                    p
+                                                        | Incorrect closing tag 
+                                                        span.highlight iframe
+                                                    .code-chunk
+                                                        .coords.flex
+                                                            ="\n"
+                                                            span line
+                                                            ="\n"
+                                                            span pos
+                                                        .code.flex
+                                                            ="\n"
+                                                            span 115
+                                                            ="\n"
+                                                            span 90
+                                                            ="\n"
+                                                            div
+                                                                span.highlight &lt;pubDate&gt;Mon, 28 Oct 2019 15:53:25 +0400&lt;/pubDate&gt;
+                                                |
+                                                |
+                                                .response-code
+                                                    p
+                                                        | Incorrect closing tag 
+                                                        span.highlight iframe
+                                                    .code-chunk
+                                                        .coords.flex
+                                                            ="\n"
+                                                            span line
+                                                            ="\n"
+                                                            span pos
+                                                        .code.flex
+                                                            ="\n"
+                                                            span 115
+                                                            ="\n"
+                                                            span 90
+                                                            ="\n"
+                                                    div.code-highlight
+                                                        .level-1
+                                                            | &lt;item&gt;
+                                                            .level-2
+                                                                | &lt;description&gt;
+                                                                .level-3.error
+                                                                    | &lt;link&gt;https://report.az/maliyye/amb-elektron-imza-uzre-sertifikatlasma-sistemini-modernlesdirir-sistemini-modernlesdirir/&lt;/link&gt;
+                                                                | &lt;/description&gt;
+                                                            .level-2
+                                                                | &lt;pubDate&gt;Mon, 28 Oct 2019 15:53:25 +0400&lt;/pubDate&gt;
+                                                            .level-2
+                                                                | &lt;category&gt;Biznes və maliyyə&lt;/category&gt;
+                                                            | &lt;/item&gt;
+                                            // Detailed Reponse
+                                    // Collapse
+                                // T-row
+                                |
+                                |
+                                .t-row
+                                    .flex(data-toggle="collapse" data-target="#v-result1" aria-expanded="false")
+                                        .t-cell
+                                            p.time 23:58
+                                        .t-cell
+                                            p.status.danger Update error
+                                        .t-cell
+                                            ="\n"
+                                            span 0
+                                        .t-cell
+                                            ="\n"
+                                            span 1
+                                        .t-cell
+                                            ="\n"
+                                            span 0
+                                        .t-cell
+                                            ="\n"
+                                            span 0
+                                    |
+                                    |
+                                    .collapse(id="v-result1")
+                                        .v-response
+                                            p.v-message Errors were found during the RCC update. Some pages may not be displayed or displayed incorrectly.
+                                            .v-info
+                                                strong Last file validation
+                                                p Total pages: 49
+                                                p Correct ones: 48
+                                                p With warnings: 1
+                                            // Validation info
+                                            .detailed-response
+                                                .errors-counter
+                                                    div 0 warnings
+                                                    div.active 1 error
+                                                    div fatal
+                                                |
+                                                |
+                                                .response-code
+                                                    p
+                                                        | Incorrect closing tag 
+                                                        span.highlight iframe
+                                                    .code-chunk
+                                                        .coords.flex
+                                                            ="\n"
+                                                            span line
+                                                            ="\n"
+                                                            span pos
+                                                        .code.flex
+                                                            ="\n"
+                                                            span 115
+                                                            ="\n"
+                                                            span 90
+                                                            ="\n"
+                                                            div
+                                                                // Place XML code here
+                                            // Detailed Reponse
+                                    // Collapse
+                                // T-row
+                                |
+                                |
+                                .t-row
+                                    .flex.no-errors(data-toggle="collapse" data-target="#v-result2" aria-expanded="false")
+                                        .t-cell
+                                            p.time 23:41
+                                        .t-cell
+                                            p.status.warning Update warning
+                                        .t-cell
+                                            ="\n"
+                                            span 0
+                                        .t-cell
+                                            ="\n"
+                                            span 0
+                                        .t-cell
+                                            ="\n"
+                                            span 1
+                                        .t-cell
+                                            ="\n"
+                                            span 0
+                                // T-row
+                                |
+                                |
+                                .t-row
+                                    .flex(data-toggle="collapse" data-target="#v-result3" aria-expanded="false")
+                                        .t-cell
+                                            p.time 23:38
+                                        .t-cell
+                                            p.status.warning Update warning
+                                        .t-cell
+                                            ="\n"
+                                            span 0
+                                        .t-cell
+                                            ="\n"
+                                            span 0
+                                        .t-cell
+                                            ="\n"
+                                            span 1
+                                        .t-cell
+                                            ="\n"
+                                            span 0
+                                    |
+                                    |
+                                    .collapse(id="v-result3")
+                                        .v-response
+                                            p.v-message Errors were found during the RCC update. Some pages may not be displayed or displayed incorrectly.
+                                            .v-info
+                                                strong Last file validation
+                                                p Total pages: 49
+                                                p Correct ones: 48
+                                                p With warnings: 1
+                                            // Validation info
+                                            .detailed-response
+                                                .errors-counter
+                                                    div.active 1 warning
+                                                    div no errors
+                                                    div fatal
+                                                |
+                                                |
+                                                .response-code
+                                                    p
+                                                        | Incorrect closing tag 
+                                                        span.highlight iframe
+                                                    .code-chunk
+                                                        .coords.flex
+                                                            ="\n"
+                                                            span line
+                                                            ="\n"
+                                                            span pos
+                                                        .code.flex
+                                                            ="\n"
+                                                            span 115
+                                                            ="\n"
+                                                            span 90
+                                                            ="\n"
+                                                            div
+                                                                // Place XML code here
+                                            // Detailed Reponse
+                                    // Collapse
+                                // T-row
+                            // Diagnostics table
+                        |
+                        |

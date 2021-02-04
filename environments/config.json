@@ -1,0 +1,39 @@
+{
+  "description": "Rss.az initialization template",
+  "author": "Vagif Rufullazada",
+  "environments": {
+    "development": {
+      "path": "dev"
+    },
+    "production": {
+      "path": "prod"
+    }
+  },
+  "callbacks": {
+    "writable": {
+      "method": "setWritable",
+      "files": [
+        "backend/runtime",
+        "backend/web/assets",
+        "console/runtime",
+        "frontend/runtime",
+        "frontend/web/assets",
+        "cabinet/runtime",
+        "cabinet/web/assets",
+        "api/runtime"
+      ]
+    },
+    "executable": {
+      "method": "setExecutable",
+      "files": ["yii"]
+    },
+    "cookie_validation_key": {
+      "method": "setCookieValidationKey",
+      "files": [
+        "backend/config/main-local.php",
+        "frontend/config/main-local.php",
+        "cabinet/config/main-local.php"
+      ]
+    }
+  }
+}

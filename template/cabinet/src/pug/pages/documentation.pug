@@ -1,0 +1,193 @@
+extends ../layout/dashboard-layout.pug
+
+block content
+    section.documentation-page
+        .container
+            .row
+                .col
+                    .white-panel
+                        ul.nav.nav-tabs(role="tablist")
+                            li.nav-item
+                                ="\n"
+                                a(href="#ru" data-toggle="tab" class="nav-link active") Ru
+                            li.nav-item
+                                ="\n"
+                                a(href="#en" data-toggle="tab" class="nav-link") En
+                            li.nav-item
+                                ="\n"
+                                a(href="#az" data-toggle="tab" class="nav-link") Az
+                        // Nav tabs
+                        |
+                        |
+                        .tab-content
+                            .tab-pane.active(role="tabpanel" id="ru")
+                                .editor-body
+                                    h1 Технические требования
+                                    p Экспорт данных для размещения заголовков и аннотаций новостей на RSS.az (в том числе на сайте RSS новости) осуществляется в XML-based формате RSS 2.0
+                                    h2 Описание элементов RSS 2.0
+                                    p Корневым элементом RSS-файла является rss, атрибут version которого должен иметь значение 2.0.
+                                    p
+                                        span.highlight &lt;rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"&gt;...&lt;/rss&gt;
+                                    p Внутри элемента rss содержится элемент channel, который включает информацию об источнике и его содержание.
+                                    h2 Информация о сайте-источнике
+                                    .table-container
+                                        table(border="1")
+                                            tr
+                                                th Элемент
+                                                th Описание
+                                            tr
+                                                td
+                                                    p title
+                                                td
+                                                    p Название RSS-канала.
+                                                    p Если экспортируется содержание целого сайта, укажите название сайта.
+                                                    p
+                                                        span.highlight &lt;title&gt;Report İnformasiya Agentliyi&lt;/title&gt;
+                                            tr
+                                                td
+                                                    p link
+                                                td
+                                                    p Домен сайта, данные которого транслируются.
+                                                    p
+                                                        span.highlight &lt;link&gt;https://report.az/&lt;/link&gt;
+                                            tr
+                                                td
+                                                    p description
+                                                td
+                                                    p Описание канала одним предложением.
+                                                    p
+                                                        span.highlight &lt;description&gt;Report İnformasiya Agentliyi&lt;/description&gt;
+                                            tr
+                                                td
+                                                    p language
+                                                td
+                                                    p Язык статьи по стандарту #[span(style="color: red") ISO 639-1]
+                                                    p
+                                                        span.highlight &lt;description&gt;Report İnformasiya Agentliyi&lt;/description&gt;
+                                            tr
+                                                td
+                                                    p item*
+                                                td
+                                                    p Информация о странице и ее содержимом.
+                                                    p Каждый #[span(style="color: blue; font-style: italic;") item] описывает только одно новостное сообщение. В channel может содержаться любое количество элементов item.
+                                                    p Для передачи новостных сообщений в item указываются следующие обязательные элементы:
+                                                    ul(style="font-style: italic;")
+                                                        li title* — заголовок сообщения;
+                                                        li link* — URL сообщения;
+                                                        li pubDate* — время публикации сообщения на сайте источника;
+                                                        li guid — уникальный идентификатор новости. Может быть и ссылкой или идентификатором статьи, главное чтобы он был уникальным
+                                                    div.code-highlight
+                                                        .level-1
+                                                            | &lt;item&gt;
+                                                            .level-2
+                                                                | &lt;guid isPermaLink="false"&gt;b0686f7b4e1c8f371f87b3cc151d13e6&lt;/guid&gt;
+                                                            .level-2
+                                                                | &lt;title isPermaLink="false"&gt;
+                                                                .level-3 &lt;![CDATA[ Bakıda I Xəzər Elm Forumu keçiriləcək ]]&gt;
+                                                                | &lt;/title&gt;
+                                                            .level-2
+                                                                | &lt;link https://report.az/elm-ve-tehsil/bakida-i-xezer-elm-forumu-kecirilecek/&gt;...&lt;/link&gt;
+                                                            .level-2
+                                                                | &lt;description&gt;
+                                                                .level-3 &lt;![CDATA[ Azərbaycan nümayəndə heyəti Həştərxan Dövlət Universitetində keçirilən “XXI əsrin Xəzəri: davamlı inkişafın yolları” Beynəlxalq Elmi Forumda iştirak edir ]]&gt;
+                                                                | &lt;/description&gt;
+                                                            .level-2
+                                                                | &lt;pubDate&gt;Wed, 19 Feb 2020 10:38:16 +0400&lt;/pubDate&gt;
+                                                            .level-2
+                                                                | &lt;enclosure url="https://report.az/storage/news/d97029c22df8fcdb0c0f5da33811dac5/05b1687b-89d8-4cde-85e8-d134f5a77136_675.jpg" type="image/jpeg" /pubDate&gt;
+                                                            .level-2
+                                                                | &lt;category&gt;
+                                                                .level-3 &lt;![CDATA[ Elm ]]&gt;
+                                                                | &lt;/category&gt;
+                                                            | &lt;/item&gt;
+                                    h2 Информация о сообщении
+                                    p Данные передаются в элементе #[span.highlight item].
+                                    .table-container
+                                        table(border="1")
+                                            tr
+                                                th Элемент
+                                                th Описание
+                                            tr
+                                                td
+                                                    p title*
+                                                td
+                                                    p Заголоовок сообщения.
+                                                    p
+                                                        span.highlight &lt;title&gt; &lt;![CDATA[ETSN nümayəndələri “Təmiz Şəhər” ASC-nin fəaliyyəti ilə tanış olub]]&gt; &lt;/title&gt;
+                                                    p Элемент title должен содержать актуальный вариант заголовка сообщения, такого же, как на странице с новостью на сайте. Минимальная длина 3, максимальная 200 символов. HTML-теги запрещены
+                                                    p Запрещено:
+                                                    ul(style="font-style: italic;")
+                                                        li передавать заголовок сообщения, написанный полностью прописными буквами;
+                                                        li ставить точку в конце заголовка;
+                                                        li указывать в заголовке название источника, дату или время сообщения;
+                                                        li включать в заголовок служебные примечания (например, «обновлено», «дополнено», «фоторепортаж», «видео») и неинформативные обороты, которые не являются неотъемлемой частью заголовка (например, «Срочно!» или «Сенсация»).
+                                            tr
+                                                td
+                                                    p link*
+                                                td
+                                                    p URL страницы-источника.
+                                                    p
+                                                        span.highlight &lt;link&gt;https://report.az/ekologiya/etsn-numayendeleri-temiz-seher-asc-nin-fealiyyeti-ile-tanis-olub/&lt;/link&gt;
+                                                    p Требования:
+                                                    ul(style="font-style: italic;")
+                                                        li ссылка должна содержать схему HTTP или HTTPS;
+                                                        li домен, указанный в ссылке, должен соответствовать домену сайта-источника;
+                                                        li максимальная длина URL — 243 #[span(style="color: blue") ASCII-символа];
+                                                        li по одному URL должна быть доступна одна статья;
+                                                        li URL не должны повторяться или различаться только адресом после символа # или !#. Например, http://www.some-host.ru/news.html#2545 и http://www.some-host.ru/news.html#5794. Такие ссылки считаются идентичными и не допускаются к передаче внутри одного элемента item.
+                                            tr
+                                                td
+                                                    p pubDate*
+                                                td
+                                                    p дата публикации новости по стандарту #[span(style="color: blue") RFC 2822]
+                                                    p
+                                                        span.highlight &lt;pubDate&gt;Wed, 19 Feb 2020 10:35:31 +0400&lt;/pubDate&gt;
+                                            tr
+                                                td
+                                                    p description
+                                                td
+                                                    p Краткое описание сообщения (аннотация, лид). мин. длина 10, максимальная 400 символов.
+                                                    div.code-highlight
+                                                        .level-1
+                                                            | &lt;description&gt;
+                                                            .level-3 &lt;![CDATA[ Ekologiya və Təbii Sərvətlər naziri Muxtar Babayev və nazirliyin nümayəndələri “Təmiz Şəhər” ASC tərəfindən reallaşdırılan layihələr və Balaxanı Sənaye Parkında görülən işlərlə tanış olublar. ]]&gt;
+                                                            | &lt;/description&gt;
+                                            tr
+                                                td
+                                                    p category
+                                                td
+                                                    p Рубрика (раздел, категория).Указывается оригинальное (как в издании) название рубрики, в которой опубликовано сообщение. Одному сообщению может соответствовать только одна рубрика.
+                                                    p Доступные категории: Общество, Культура, Политика, Спорт, Экономика, Наука, Технологии, Мир, Авто, Аналитика, Здоровье, Интересное
+                                                    p
+                                                        span.highlight &lt;category&gt; &lt;![CDATA[ Cəmiyyət. ]]&gt; &lt;/category&gt;
+                                            tr
+                                                td
+                                                    p enclosure
+                                                td
+                                                    p Иллюстрации, аудио и видеофайлы.
+                                                    p В одном элементе указывается ссылка на одну иллюстрацию, аудио или видеофайл. Если в сообщении содержится несколько иллюстраций, или иллюстрация и видеофайл, используйте несколько элементов enclosure.
+                                                    p Требования к иллюстрациям:
+                                                    ul(style="font-style: italic;")
+                                                        li Ширина не менее 240 пикселей, длина не менее 300 пикселей. Иллюстрации меньшего размера не индексируются. Если есть несколько вариантов одной иллюстрации, отличающихся размером, в enclosure должен быть указан URL изображения наибольшего размера.
+                                                        li Иллюстрации должны быть разрешены к индексированию в файле #[span(style="color: blue") robots.txt].
+                                                    p Для изображений параметр type должен совпадать с тем, что отдается по указанному URL. Значение url обязательно. Значение type крайне рекомендуемо, а если невозможно определить тип контента по расширению файла, то обязательно.
+                                                    p
+                                                        span.highlight &lt;enclosure url="https://report.az/storage/news/4db414751a8cf9bfe53740ca90c1f883/975d3893-2f83-4a51-ab7c-ce4ce584d69e_675.jpg" type="image/jpeg" /&gt;
+                            // Tab pane
+                            |
+                            |
+                            .tab-pane(role="tabpanel" id="en")
+                                .editor-body
+                                    h1 Technical requirements
+                            // Tab pane
+                            |
+                            |
+                            .tab-pane(role="tabpanel" id="az")
+                                .editor-body
+                                    h1 Texniki tapşırıq
+                            // Tab pane
+                        // Tab content
+                    // White panel
+    // Documentation page
+    |
+    |

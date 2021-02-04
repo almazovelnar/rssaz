@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+    head
+        title Rss.az
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css")
+    body
+        include dashboard-header.pug
+        |
+        |
+        main.dashboard-content
+            .guide-links
+                .container
+                    .row
+                        .col
+                            .white-panel
+                                ul.flex
+                                    li
+                                        ="\n"
+                                        a(href="#") Quick start
+                                    li
+                                        ="\n"
+                                        a(href="#") How to add website
+                                    li
+                                        ="\n"
+                                        a(href="#") How to create an RSS feed
+            // Guide links
+            |
+            |
+            block content
+        |
+        |
+        include dashboard-footer.pug
+        |
+        |
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+        script(src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js")

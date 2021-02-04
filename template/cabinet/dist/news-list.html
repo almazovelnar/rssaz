@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Rss.az</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header class="dashboard-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="inner flex">
+							<div class="menu-toggler visible-991"><img src="images/bars-white.svg"></div>
+
+							<div class="logo-links flex">
+								<div class="logo"><a href="index.html"><img src="images/logo-white.svg"></a></div>
+
+								<ul class="hidden-991">
+									<li><a href="dashboard.html">Dashboard</a></li>
+									<li><a href="sites.html">Saytarım</a></li>
+									<li><a href="rss-validator.html">RSS Validator</a></li>
+								</ul>
+							</div>
+							<!-- Logo / Links-->
+
+							<div class="user-info flex hidden-575">
+								<div class="add-website hidden-991"><a class="flex" href="add-website.html">
+										Sayt əlavə et<i class="material-icons">add_circle_outline</i></a></div>
+
+								<div class="user flex">
+									<div class="actions">
+										<p class="name">Hamzayev Farid</p>
+										<a href="edit-profile.html">Edit profile</a>
+									</div>
+
+									<div class="user-image cover-center" style="background-image: url(images/user.png)">
+										<div class="overlay flex-center"><a class="logout" href="javascript:void(0);"><i class="material-icons">clear</i></a></div>
+									</div>
+								</div>
+								<!-- User-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header-->
+
+		<div class="side-menu-wrapper">
+			<div class="close-menu"><img src="images/close.svg"></div>
+
+			<div class="side-menu">
+				<div class="user flex">
+					<div class="actions">
+						<p class="name">John Doe</p>
+						<a href="#">Edit profile</a>
+					</div>
+
+					<div class="user-image cover-center" style="background-image: url(images/user.png)">
+						<div class="overlay flex-center"><a class="logout" href="javascript:void(0);"><i class="material-icons">clear</i></a></div>
+					</div>
+				</div>
+				<!-- User-->
+
+				<ul class="dashboard-links">
+					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="sites.html">Saytarım</a></li>
+				</ul>
+
+				<div class="add-website"><a class="flex" href="add-site.html">
+						Sayt əlavə et<i class="material-icons">add_circle_outline</i></a></div>
+			</div>
+		</div>
+		<!-- Side menu wrapper-->
+
+
+		<main class="dashboard-content">
+			<div class="guide-links">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="white-panel">
+								<ul class="flex">
+									<li>
+										<a href="#">Quick start</a>
+									</li>
+									<li>
+										<a href="#">How to add website</a>
+									</li>
+									<li>
+										<a href="#">How to create an RSS feed</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Guide links-->
+
+			<section class="site-news-page">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="white-panel">
+								<div class="title-links flex">
+									<h2 class="block-title">Report.az news list</h2>
+
+									<div class="links flex">
+
+										<a class="btn-custom add-news" href="add-news.html">Xəbər əlavə et<i class="material-icons">add_circle_outline</i></a>
+										<a class="btn-custom force-update is-loading" href="#">Force RSS update<i class="material-icons">refresh</i></a>
+
+										<p class="update-error">Error ocured <a href="#">go to link link</a></p>
+									</div>
+								</div>
+
+								<div class="news-filters">
+									<form class="flex" action="#" method="GET">
+										<div class="by-day">
+											<div class="form-group select">
+												<label>Tarix</label>
+												<select class="form-control">
+													<option value="0">Son 30 gün</option>
+													<option value="1">Son 14 gün</option>
+													<option value="2">Son 7 gün</option>
+												</select>
+											</div>
+										</div>
+										<!-- By Day-->
+
+										<div class="by-website">
+											<div class="form-group select">
+												<label>Sayt</label>
+												<select class="form-control">
+													<option value="0">Bütün xeberler</option>
+													<option value="1">report.az</option>
+													<option value="2">news.ru</option>
+												</select>
+											</div>
+										</div>
+										<!-- By Website-->
+
+										<div class="search-filter hidden-991">
+											<div class="form-group">
+												<label>Axtarış</label>
+												<input class="form-control" type="text">
+											</div>
+										</div>
+										<!-- Search Filter-->
+
+										<div class="news-lang">
+											<div class="form-group select">
+												<label>Dil</label>
+												<select class="form-control">
+													<option value="0">AZ</option>
+													<option value="1">EN</option>
+													<option value="2">RU</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="num-to-show">
+											<div class="form-group select">
+												<label>Görsətmə sayı</label>
+												<select class="form-control">
+													<option value="0">50</option>
+													<option value="1">30</option>
+													<option value="2">10</option>
+												</select>
+											</div>
+										</div>
+										<!-- Number To Show-->
+
+										<div class="filter-by">
+											<div class="form-group select">
+												<label>Çeşidləmə</label>
+												<select class="form-control">
+													<option value="0">Tarixə görə</option>
+													<option value="1">Baxish üzrə</option>
+												</select>
+											</div>
+										</div>
+									</form>
+								</div>
+								<!-- News Filters-->
+
+								<div class="news-list">
+									<div class="site flex">
+										<div class="info flex">
+											<div class="image hidden-575"><a href="#"><img src="images/news/small0.png"></a></div>
+
+											<div class="name-url">
+												<p class="name"><a href="#">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. </a></p>
+												<p class="url">https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…</p>
+											</div>
+										</div>
+
+										<div class="actions">
+											<div class="site-stat text-center">
+												<p>235</p>
+												<p>Keçid</p>
+											</div>
+
+											<div class="site-stat text-center">
+												<p>3562</p>
+												<p>Görsənmə</p>
+											</div>
+											<a class="btn-delete detele-news" href="#"><i class="material-icons">highlight_off</i></a>
+										</div>
+									</div>
+									<!-- Site-->
+
+									<div class="site flex">
+										<div class="info flex">
+											<div class="image hidden-575"><img src="images/news/small1.png"></div>
+
+											<div class="name-url">
+												<p class="name">Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. </p>
+												<p class="url">https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…</p>
+											</div>
+										</div>
+
+										<div class="actions">
+											<div class="site-stat text-center">
+												<p>235</p>
+												<p>Keçid</p>
+											</div>
+
+											<div class="site-stat text-center">
+												<p>3562</p>
+												<p>Görsənmə</p>
+											</div>
+											<a class="btn-delete detele-news" href="#"><i class="material-icons">highlight_off</i></a>
+										</div>
+									</div>
+									<!-- Site-->
+
+									<div class="site flex">
+										<div class="info flex">
+											<div class="image hidden-575"><img src="images/news/small2.png"></div>
+
+											<div class="name-url">
+												<p class="name">Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi.</p>
+												<p class="url">https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…</p>
+											</div>
+										</div>
+
+										<div class="actions">
+											<div class="site-stat text-center">
+												<p>235</p>
+												<p>Keçid</p>
+											</div>
+
+											<div class="site-stat text-center">
+												<p>3562</p>
+												<p>Görsənmə</p>
+											</div>
+											<a class="btn-delete detele-news" href="#"><i class="material-icons">highlight_off</i></a>
+										</div>
+									</div>
+									<!-- Site-->
+
+									<div class="site flex">
+										<div class="info flex">
+											<div class="image hidden-575"><img src="images/news/small3.png"></div>
+
+											<div class="name-url">
+												<p class="name">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem.</p>
+												<p class="url">https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…</p>
+											</div>
+										</div>
+
+										<div class="actions">
+											<div class="site-stat text-center">
+												<p>235</p>
+												<p>Keçid</p>
+											</div>
+
+											<div class="site-stat text-center">
+												<p>3562</p>
+												<p>Görsənmə</p>
+											</div>
+											<a class="btn-delete detele-news" href="#"><i class="material-icons">highlight_off</i></a>
+										</div>
+									</div>
+									<!-- Site-->
+
+									<div class="site flex">
+										<div class="info flex">
+											<div class="image hidden-575"><img src="images/news/small4.png"></div>
+
+											<div class="name-url">
+												<p class="name">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. </p>
+												<p class="url">https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…</p>
+											</div>
+										</div>
+
+										<div class="actions">
+											<div class="site-stat text-center">
+												<p>235</p>
+												<p>Keçid</p>
+											</div>
+
+											<div class="site-stat text-center">
+												<p>3562</p>
+												<p>Görsənmə</p>
+											</div>
+											<a class="btn-delete detele-news" href="#"><i class="material-icons">highlight_off</i></a>
+										</div>
+									</div>
+									<!-- Site-->
+
+									<div class="site flex">
+										<div class="info flex">
+											<div class="image hidden-575"><img src="images/news/small5.png"></div>
+
+											<div class="name-url">
+												<p class="name">Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi.</p>
+												<p class="url">https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…</p>
+											</div>
+										</div>
+
+										<div class="actions">
+											<div class="site-stat text-center">
+												<p>235</p>
+												<p>Keçid</p>
+											</div>
+
+											<div class="site-stat text-center">
+												<p>3562</p>
+												<p>Görsənmə</p>
+											</div>
+											<a class="btn-delete detele-news" href="#"><i class="material-icons">highlight_off</i></a>
+										</div>
+									</div>
+									<!-- Site-->
+
+									<div class="site flex">
+										<div class="info flex">
+											<div class="image hidden-575"><img src="images/news/small6.png"></div>
+
+											<div class="name-url">
+												<p class="name">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem.</p>
+												<p class="url">https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…</p>
+											</div>
+										</div>
+
+										<div class="actions">
+											<div class="site-stat text-center">
+												<p>235</p>
+												<p>Keçid</p>
+											</div>
+
+											<div class="site-stat text-center">
+												<p>3562</p>
+												<p>Görsənmə</p>
+											</div>
+											<a class="btn-delete detele-news" href="#"><i class="material-icons">highlight_off</i></a>
+										</div>
+									</div>
+									<!-- Site-->
+
+									<div class="site flex">
+										<div class="info flex">
+											<div class="image hidden-575"><img src="images/news/small7.png"></div>
+
+											<div class="name-url">
+												<p class="name">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. </p>
+												<p class="url">https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…</p>
+											</div>
+										</div>
+
+										<div class="actions">
+											<div class="site-stat text-center">
+												<p>235</p>
+												<p>Keçid</p>
+											</div>
+
+											<div class="site-stat text-center">
+												<p>3562</p>
+												<p>Görsənmə</p>
+											</div>
+											<a class="btn-delete detele-news" href="#"><i class="material-icons">highlight_off</i></a>
+										</div>
+									</div>
+									<!-- Site-->
+
+									<div class="site flex">
+										<div class="info flex">
+											<div class="image hidden-575"><img src="images/news/small8.png"></div>
+
+											<div class="name-url">
+												<p class="name">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. </p>
+												<p class="url">https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…</p>
+											</div>
+										</div>
+
+										<div class="actions">
+											<div class="site-stat text-center">
+												<p>235</p>
+												<p>Keçid</p>
+											</div>
+
+											<div class="site-stat text-center">
+												<p>3562</p>
+												<p>Görsənmə</p>
+											</div>
+											<a class="btn-delete detele-news" href="#"><i class="material-icons">highlight_off</i></a>
+										</div>
+									</div>
+									<!-- Site-->
+
+									<div class="site flex">
+										<div class="info flex">
+											<div class="image hidden-575"><img src="images/news/small9.png"></div>
+
+											<div class="name-url">
+												<p class="name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. </p>
+												<p class="url">https://report.az/siyasi-xeberler/daxili-siyaset/eli-hesenov-dovletin-tehlukesizliyi…</p>
+											</div>
+										</div>
+
+										<div class="actions">
+											<div class="site-stat text-center">
+												<p>235</p>
+												<p>Keçid</p>
+											</div>
+
+											<div class="site-stat text-center">
+												<p>3562</p>
+												<p>Görsənmə</p>
+											</div>
+
+											<div class="site-stat text-center">
+												<p>0</p>
+												<p>CTR</p>
+											</div>
+											<a class="btn-dark detele-news" href="#"><i class="material-icons">arrow_upward</i></a>
+											<a class="btn-delete detele-news" href="#"><i class="material-icons">highlight_off</i></a>
+										</div>
+									</div>
+									<!-- Site-->
+
+								</div>
+								<!-- News List-->
+
+								<div class="news-pagination">
+									<nav>
+										<ul class="pagination">
+											<li class="page-item"><a class="page-link" href="#">«</a></li>
+											<li class="page-item active"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#">»</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!-- News pagination-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- News List Page-->
+
+		</main>
+
+		<footer class="dashboard-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="inner flex">
+							<div class="copyrights">
+								<p>RSS.az</p>
+								<p>Copyright © 2018 Bütün hüquqlar qorunur.</p>
+							</div>
+
+							<div class="reference">
+								<p>Saytdakı materialların istifadəsi zamanı istinad edilməsi vacibdir. Məlumat internet səhifələrində istifadə edildikdə hiperlink vasitəsi ilə istinad mütləqdir.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+		<script type="text/javascript" src="js/index.bundle.js"></script>
+	</body>
+
+</html>

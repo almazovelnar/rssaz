@@ -1,0 +1,152 @@
+.to-top {
+    position: fixed;
+    bottom: 50px;
+    right: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    font-size: 26px;
+    background: #a50015;
+    z-index: 45;
+    cursor: pointer;
+    transition: .3s ease;
+
+    &.active {
+        right: 50px;
+    }
+}
+
+footer {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+
+    &.dashboard-footer {
+        background: #fafafa;
+
+        .inner {
+            border-top: 3px solid #e20000;
+        }
+
+        .copyrights {
+            p:first-child {
+                color: #4a4a4a;
+            }
+        }
+    }
+
+    .inner {
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 0;
+        border-top: 3px solid #7a010f;
+
+        p {
+            color: #4a4a4a;
+            font-size: 14px;
+        }
+    }
+
+    .copyrights {
+        p:first-child {
+            font-family: "Montserrat Bold", sans-serif;
+            font-size: 16px;
+            color: #7a010f;
+            margin: 0 0 5px 0;
+        }
+    }
+    
+    .reference {
+        max-width: 560px;
+        text-align: right;
+    }
+}
+
+.static-links {
+    margin: 0 0 10px 0;
+
+    li {
+        margin: 0 0 5px 20px;
+    }
+
+    a {
+        font-family: "Montserrat Bold", sans-serif;
+        font-size: 15px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    margin: 10px 0 0 0;
+
+    li {
+        margin: 0 15px 0 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        color: #fff;
+        width: 24px;
+        height: 24px;
+        background: #474747;
+        border-radius: 50%;
+
+        i {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .to-top {
+        display: none;
+    }
+
+    footer {
+        .inner {
+            justify-content: center;
+        }
+
+        .copyrights,
+        .reference {
+            width: 100%;
+            text-align: center;
+        }
+
+        .copyrights {
+            margin: 0 0 15px 0;
+        }
+
+        .socials {
+            justify-content: center;
+
+            li {
+                margin: 0 7px !important;
+            }
+        }
+
+        .static-links {
+            li {
+                margin: 0 10px 5px 10px;
+            }
+        
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}

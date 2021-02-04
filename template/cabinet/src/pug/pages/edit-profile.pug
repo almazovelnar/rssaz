@@ -1,0 +1,64 @@
+extends ../layout/dashboard-layout.pug
+
+block content
+    section.edit-profile
+        .container
+            .row
+                .col
+                    .white-panel
+                        .title-links.flex
+                            h2.block-title Profil redaktə
+                            |
+                            |
+                            .links.flex
+                                |
+                                |
+                                a(class="btn-custom" href="reset-password.html") Şifrəni dəyiş
+                                    i.material-icons arrow_forward_ios
+                        |
+                        |
+                        form(action="#" method="POST" class="flex")
+                            .upload-avatar-block
+                                .image-preview
+                                    ="\n"
+                                    span No image
+                                |
+                                |
+                                .form-group
+                                    input(type="file" name="user-image" class="upload-avatar" hidden)
+                                |
+                                |
+                                button(type="button" class="trigger-image-upload") Yenilə
+                            // Avatar Upload
+                            |
+                            |
+                            .profile-info
+                                .row
+                                    .col-lg-6
+                                        .form-group
+                                            label Adınız
+                                            input(type="text" class="form-control" name="name" value="Huseyn" required)
+                                    // Col
+                                    |
+                                    |
+                                    .col-lg-6
+                                        .form-group
+                                            label Soyadınız
+                                            input(type="text" class="form-control" name="surname" value="Aliyev" required)
+                                    // Col
+                                    |
+                                    |
+                                    .col-lg-6
+                                        .form-group
+                                            label Email
+                                            input(type="email" class="form-control" name="email" value="huseyn.aliyev@gmail.com" disabled)
+                                    // Col
+                                    |
+                                    |
+                                    .col-lg-6
+                                        button(class="btn-custom submit-edit-profile") Yadda saxla
+                                            i.material-icons arrow_forward_ios
+                                    // Col
+    // Edit Profile Page
+    |
+    |

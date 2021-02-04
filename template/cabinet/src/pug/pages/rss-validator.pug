@@ -1,0 +1,66 @@
+extends ../layout/dashboard-layout.pug
+
+block content
+    section.rss-validator
+        .container
+            .row
+                .col
+                    .white-panel
+                        h2.block-title RSS validasiyasi
+                        |
+                        |
+                        .row
+                            .col-lg-8.offset-lg-2
+                                form(action="#" method="GET" class="rss-validation-form")
+                                    .form-group
+                                        input(type="text" class="form-control" placeholder="URL to rss" required)
+                                    |
+                                    |
+                                    .form-group.select
+                                        select(class="form-control")
+                                            option(value="0") Bütün saytlar
+                                            option(value="1") report.az
+                                            option(value="2") news.ru
+                                    |
+                                    |
+                                    button(class="btn-custom") Yoxla
+                                // Validation Form
+                        // Row
+                        |
+                        |
+                        .rss-v-results
+                            h3.v-status.danger Uğursuz validasiya
+                            |
+                            |
+                            .err-details
+                                .message #[a(href="#") line 14], column 22: #[span.err-highlight width must be between 1 and 144]
+                                .highlight
+                                    | &lt;width&gt;214&lt;/width&gt;
+                            // Error Details
+                            |
+                            |
+                            .err-details
+                                .message #[a(href="#") line 47], column 36: #[span.err-highlight Missing enclosure attribute: length]
+                                .highlight
+                                    | &lt;enclosure url='https://static.news.ru/p ...
+                            // Error Details
+                            |
+                            |
+                            .err-details
+                                .message #[a(href="#") line 11], column 68: #[span.err-highlight  Image not in required format]
+                                .highlight
+                                    | &lt;url&gt;https://news.ru/public/desktop/images/logo/logo.svg&lt;/url&gt;
+                            // Error Details
+                            |
+                            |
+                            .err-details
+                                .message #[a(href="#") line 194], column 12: #[span.err-highlight Missing atom:link with rel="self"]
+                                .highlight
+                                    | &lt;/channel&gt;
+                            // Error Details
+                            |
+                            |
+                        // Validation Results
+    // RSS validation page
+    |
+    |

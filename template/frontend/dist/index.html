@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Rss.az</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 flex">
+						<div class="menu-toggler visible-1200">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+
+						<div class="logo-langs flex">
+							<div class="logo">
+								<a href="index.html">
+									<img src="images/logo.png">
+								</a>
+							</div>
+
+							<div class="dropdown hidden-1200">
+								<a class="dropdown-toggle" href="#" role="button" id="langs" data-toggle="dropdown">AZ</a>
+
+
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">RU</a>
+									<a class="dropdown-item" href="#">EN</a>
+								</div>
+							</div>
+						</div>
+
+						<nav class="main-menu hidden-1200">
+							<ul>
+								<li><a href="category.html">Son xəbərlər</a></li>
+								<li><a href="category.html">Cəmiyyət</a></li>
+								<li><a href="category.html">Mədəniyyət</a></li>
+								<li><a href="category.html">Siyasət</a></li>
+								<li><a href="category.html">İdman</a></li>
+								<li><a href="category.html">İqtisadiyyat</a></li>
+								<li><a href="category.html">Elm</a></li>
+								<li><a href="category.html">Dünya</a></li>
+								<li><a href="category.html">Analitika</a></li>
+							</ul>
+						</nav>
+
+						<div class="login">
+							<a href="login.html">Giriş
+								<i class="icon-angle-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mobile-sidebar">
+				<div class="sidebar-body">
+					<ul>
+						<li><a href="category.html">Son xəbərlər</a></li>
+						<li><a href="category.html">Cəmiyyət</a></li>
+						<li><a href="category.html">Mədəniyyət</a></li>
+						<li><a href="category.html">Siyasət</a></li>
+						<li><a href="category.html">İdman</a></li>
+						<li><a href="category.html">İqtisadiyyat</a></li>
+						<li><a href="category.html">Elm</a></li>
+						<li><a href="category.html">Dünya</a></li>
+						<li><a href="category.html">Analitika</a></li>
+					</ul>
+
+					<ul class="langs">
+						<li>
+							<a href="#">AZ</a>
+						</li>
+						<li>
+							<a href="#">RU</a>
+						</li>
+						<li>
+							<a href="#">EN</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Mobile menu-->
+		</header>
+		<!-- Header-->
+
+
+		<main class="content">
+			<section class="main-page">
+				<div class="news-filters hidden-767">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<form method="GET" data-url="/site/filter">
+									<ul>
+										<li>
+											<input class="form-control period-filter" type="radio" name="period" id="period-hour" checked>
+											<label for="period-hour">Saat</label>
+										</li>
+										<li>
+											<input class="form-control period-filter" type="radio" name="period" id="period-day">
+											<label for="period-day">Gün</label>
+										</li>
+										<li>
+											<input class="form-control period-filter" type="radio" name="period" id="period-week">
+											<label for="period-week">Həftə</label>
+										</li>
+									</ul>
+								</form>
+
+								<div class="search-field">
+									<div class="form-group">
+										<input class="form-control search" type="text" placeholder="Xəbərlər üzrə axtarış">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- News filters-->
+
+				<div class="news-filters mobile-filters visible-767">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<form method="GET" data-url="/site/filter">
+									<div class="form-group select">
+										<select class="form-control period-filter" name="period">
+											<option value="hour">Saat</option>
+											<option value="day">Gün</option>
+											<option value="week">Həftə</option>
+										</select>
+									</div>
+								</form>
+
+								<div class="search-field">
+									<div class="form-group">
+										<input class="form-control search" type="text" placeholder="Xəbərlər üzrə axtarış">
+									</div>
+
+									<div class="open-search">
+										<i class="icon-search"></i>
+									</div>
+
+									<div class="close-search">
+										<i class="icon-close"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- News filters (Mobile)-->
+
+				<div class="container pb-5">
+					<div class="row">
+						<div class="col-md-6 hot-news-wrapper hidden-767">
+							<h2 class="section-title">
+								<span>Qaynar xəbərlər</span>
+							</h2>
+
+							<div class="news-block big">
+								<div class="image lazy">
+									<a href="redirect.html">
+										<img data-src="images/news/big0.jpg">
+									</a>
+								</div>
+								<div class="info">
+									<div class="source-date flex">
+										<a class="source" href="#">
+											<img src="images/favs/image0.png">
+											<span>Report IA</span>
+										</a>
+										<span class="date">9 Avqust, 2019  11:57</span>
+									</div>
+									<a class="title" href="redirect.html">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									<p class="description">Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir. 2018-ci ildə də bank böyük məbləğdə ziyan etmişdi.</p>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="redirect.html">
+												<img data-src="images/news/image0.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="redirect.html">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+								</div>
+								<!-- Col-->
+
+								<div class="col-md-6">
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="redirect.html">
+												<img data-src="images/news/image1.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image2.png">
+													<span>Report IA</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="redirect.html">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+								</div>
+								<!-- Col-->
+
+								<div class="col-md-6">
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="redirect.html">
+												<img data-src="images/news/image2.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image3.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="redirect.html">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+								</div>
+								<!-- Col-->
+
+								<div class="col-md-6">
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="redirect.html">
+												<img data-src="images/news/image3.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image4.png">
+													<span>Report IA</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="redirect.html">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+								</div>
+								<!-- Col-->
+							</div>
+							<!-- Row-->
+						</div>
+						<!-- Col (Hot news)-->
+
+						<div class="col-md-6 news-feed-wrapper">
+							<h2 class="section-title">
+								<span>Xəbər lenti</span>
+							</h2>
+
+							<div class="news-list">
+								<div class="inline-news highlighted">
+									<a class="title" href="redirect.html">
+										<img src="images/favs/image0.png">Xırdalanda da su olmayacaq
+									</a>
+									<p class="description">Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir. 2018-ci ildə də bank böyük...</p>
+									<span class="date">9 Avgust, 2019 11:57</span>
+								</div>
+
+								<div class="inline-news">
+									<a class="title" href="redirect.html">
+										<img src="images/favs/image1.png">Azərbaycanda pul bazasının məbləği - MƏLUM OLDU
+									</a>
+									<p class="description">Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir. 2018-ci ildə də bank böyük...</p>
+									<span class="date">9 Avgust, 2019 11:57</span>
+								</div>
+
+								<div class="inline-news highlighted">
+									<a class="title" href="redirect.html">
+										<img src="images/favs/image2.png">Azərbaycan Mərkəzi Bankı valyuta ehtiyatlarının məbləğini - AÇIQLADI
+									</a>
+									<p class="description">Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir. 2018-ci ildə də bank böyük...</p>
+									<span class="date">9 Avgust, 2019 11:57</span>
+								</div>
+
+								<div class="inline-news">
+									<a class="title" href="redirect.html">
+										<img src="images/favs/image3.png">Araşdırma: şəhid ailələrinə mənsub yalnız iki nəfər namizədliyini irəli sürüb
+									</a>
+									<p class="description">Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir. 2018-ci ildə də bank böyük...</p>
+									<span class="date">9 Avgust, 2019 11:57</span>
+								</div>
+
+								<div class="inline-news">
+									<a class="title" href="redirect.html">
+										<img src="images/favs/image4.png">"Azərbaycan Sığortaçılar Assosiasiyası"nın rəhbərliyində dəyişiklik
+									</a>
+									<p class="description">Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir. 2018-ci...</p>
+									<span class="date">9 Avgust, 2019 11:57</span>
+								</div>
+
+								<div class="backgrounded-news">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image0.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-title flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<a class="title" href="#">Maşın vurdu, körpücük sümüyü sındı, xəstəxanalıq oldu</a>
+										</div>
+										<p class="description">Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir. 2018-ci ildə də bank böyük...</p>
+										<span class="date">9 Avqust, 2019  11:57</span>
+									</div>
+								</div>
+
+								<div class="inline-news">
+									<a class="title" href="redirect.html">
+										<img src="images/favs/image6.png">Ukraynalı deputat: "Azərbaycanla münasibətlərimiz yeni səviyyəyə yüksəlir" - MÜSAHİBƏ
+									</a>
+									<p class="description">Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir. 2018-ci ildə də bank böyük məbləğdə...</p>
+									<span class="date">9 Avgust, 2019 11:57</span>
+								</div>
+
+								<div class="floated-news flex">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image4.png"></a>
+
+									</div>
+									<div class="info"><a class="title" href="redirect.html">
+											<img src="images/favs/image0.png">Bakıda sınaq imtahanına gedən qız itkin düşdü
+										</a>
+										<p class="description">Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat...</p>
+										<span class="date">9 Avgust, 2019 11:57</span>
+									</div>
+								</div>
+
+								<div class="inline-news">
+									<a class="title" href="redirect.html">
+										<img src="images/favs/image1.png">Dövlət başçısı: “Bakı-Tbilisi-Qars dəmir yolunun tikilməsi bizim tarixi qələbəmizdir”
+									</a>
+									<p class="description">Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir. 2018-ci ildə də bank böyük...</p>
+									<span class="date">9 Avgust, 2019 11:57</span>
+								</div>
+
+								<div class="inline-news">
+									<a class="title" href="redirect.html">
+										<img src="images/favs/image2.png">DİM ödənişli xidmətlərdən istifadə edənlər üçün üsulları açıqladı
+									</a>
+									<p class="description">Azərbaycandakı xalis Rusiya kapitallı bank olan “Bank VTB Azərbaycan” heç cür əməliyyat gəliri əldə edə bilmir. 2018-ci ildə...</p>
+									<span class="date">9 Avgust, 2019 11:57</span>
+								</div>
+							</div>
+							<!-- News list-->
+
+							<div class="see-all">
+								<a href="category.html">Bütün xəbər lenti<i class="icon-angle-right"></i></a>
+							</div>
+							<!-- See all news-->
+						</div>
+						<!-- Col (News feed)-->
+					</div>
+				</div>
+				<!-- Container-->
+
+				<div class="actual-news ptb-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<h2 class="section-title">
+									<span>Aktual</span>
+								</h2>
+							</div>
+							<!-- Col-->
+
+							<div class="col-md-3 col-sm-6">
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image0.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+							</div>
+							<!-- Col-->
+
+							<div class="col-md-3 col-sm-6">
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image1.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image2.png">
+												<span>Report IA</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+							</div>
+							<!-- Col-->
+
+							<div class="col-md-3 col-sm-6">
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image2.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image3.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+							</div>
+							<!-- Col-->
+
+							<div class="col-md-3 col-sm-6">
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image3.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image4.png">
+												<span>Report IA</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+							</div>
+							<!-- Col-->
+						</div>
+					</div>
+				</div>
+				<!-- Actual news-->
+
+				<div class="other-category-news pt-5">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="category-block">
+									<h2 class="section-title">
+										<span>Mədəniyyət</span>
+									</h2>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image0.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image1.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image2.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+								</div>
+								<!-- Category block-->
+
+								<div class="category-block">
+									<h2 class="section-title">
+										<span>İdman</span>
+									</h2>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image0.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image1.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image2.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+								</div>
+								<!-- Category block-->
+							</div>
+							<!-- Col-->
+
+							<div class="col-md-3 col-sm-6">
+								<div class="category-block">
+									<h2 class="section-title">
+										<span>Siyasət</span>
+									</h2>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image0.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image1.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image2.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+								</div>
+								<!-- Category block-->
+
+								<div class="category-block">
+									<h2 class="section-title">
+										<span>Sağlamlıq</span>
+									</h2>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image0.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image1.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image2.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+								</div>
+								<!-- Category block-->
+							</div>
+							<!-- Col-->
+
+							<div class="col-md-3 col-sm-6">
+								<div class="category-block">
+									<h2 class="section-title">
+										<span>İqtisadiyyat</span>
+									</h2>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image0.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image1.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image2.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+								</div>
+								<!-- Category block-->
+
+								<div class="category-block">
+									<h2 class="section-title">
+										<span>Dünya</span>
+									</h2>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image0.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image1.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image2.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+								</div>
+								<!-- Category block-->
+							</div>
+							<!-- Col-->
+
+							<div class="col-md-3 col-sm-6">
+								<div class="category-block">
+									<h2 class="section-title">
+										<span>Mədəniyyət</span>
+									</h2>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image0.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image1.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image2.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+								</div>
+								<!-- Category block-->
+
+								<div class="category-block">
+									<h2 class="section-title">
+										<span>Avto</span>
+									</h2>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image0.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image1.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+
+									<div class="news-block">
+										<div class="image lazy">
+											<a href="#">
+												<img data-src="images/news/image2.png">
+											</a>
+										</div>
+										<div class="info">
+											<div class="source-date flex">
+												<a class="source" href="#">
+													<img src="images/favs/image1.png">
+													<span>RBK.az</span>
+												</a>
+												<span class="date">9 Avqust, 2019  11:57</span>
+											</div>
+											<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+										</div>
+									</div>
+								</div>
+								<!-- Category block-->
+							</div>
+							<!-- Col-->
+						</div>
+					</div>
+				</div>
+				<!-- Other category news-->
+
+				<div class="other-news pt-5 hidden-767">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<h2 class="section-title">
+									<span>Diqər xəbərlər</span>
+								</h2>
+							</div>
+							<!-- Col-->
+
+							<div class="other-news-list flex">
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image0.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image1.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image2.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image3.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image0.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image1.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image2.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image3.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image0.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image1.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image2.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+
+								<div class="news-block">
+									<div class="image lazy">
+										<a href="#">
+											<img data-src="images/news/image3.png">
+										</a>
+									</div>
+									<div class="info">
+										<div class="source-date flex">
+											<a class="source" href="#">
+												<img src="images/favs/image1.png">
+												<span>RBK.az</span>
+											</a>
+											<span class="date">9 Avqust, 2019  11:57</span>
+										</div>
+										<a class="title" href="#">Azərbaycandakı Rusiya bankı yenə ziyan edib - İli 9 milyona yaxın əməliyyat zərərilə başa vurub</a>
+									</div>
+								</div>
+							</div>
+							<!-- News list-->
+						</div>
+					</div>
+				</div>
+				<!-- Other news-->
+			</section>
+			<!-- Main page-->
+
+		</main>
+
+		<div class="to-top"><i class="icon-angle-up"></i></div>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="inner flex">
+							<div class="copyrights">
+								<p>RSS.az</p>
+								<p>Copyright © 2018 Bütün hüquqlar qorunur.</p>
+
+								<ul class="socials">
+									<li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
+									<li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
+									<li><a href="#" target="_blank"><i class="icon-linkedin"></i></a></li>
+									<li><a href="#" target="_blank"><i class="icon-youtube-play"></i></a></li>
+								</ul>
+							</div>
+
+							<div class="reference">
+								<ul class="static-links">
+									<li>
+										<a href="static.html">About us</a>
+									</li>
+									<li>
+										<a href="static.html">Contacts</a>
+									</li>
+									<li>
+										<a href="static.html">Privacy policy</a>
+									</li>
+								</ul>
+
+								<p>Saytdakı materialların istifadəsi zamanı istinad edilməsi vacibdir. Məlumat internet səhifələrində istifadə edildikdə hiperlink vasitəsi ilə istinad mütləqdir.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.lazy.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+	</body>
+
+</html>

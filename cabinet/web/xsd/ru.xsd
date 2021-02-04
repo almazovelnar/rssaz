@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="rss">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="channel">
+                    <xs:complexType>
+                        <xs:choice maxOccurs="unbounded">
+                            <xs:element name="language" fixed="ru"/>
+                            <xs:element name="title">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="3"/>
+                                        <xs:maxLength value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="description">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="3"/>
+                                        <xs:maxLength value="300"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:anyURI" name="link"/>
+                            <xs:element type="xs:string" name="generator" minOccurs="0"/>
+                            <xs:element name="image">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element type="xs:anyURI" name="url"/>
+                                        <xs:element type="xs:string" name="title"/>
+                                        <xs:element type="xs:anyURI" name="link"/>
+                                        <xs:element type="xs:integer" name="width"/>
+                                        <xs:element type="xs:integer" name="height"/>
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="item" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="guid">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="isPermaLink"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="title">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="3"/>
+                                                    <xs:maxLength value="200"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element type="xs:anyURI" name="link"/>
+                                        <xs:element name="description">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="10"/>
+                                                    <xs:maxLength value="400"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element type="xs:string" name="pubDate"/>
+                                        <xs:element name="enclosure">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute type="xs:anyURI" name="url" use="required"/>
+                                                        <xs:attribute type="xs:integer" name="length"/>
+                                                        <xs:attribute name="type">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:enumeration value="image/gif"/>
+                                                                    <xs:enumeration value="image/jpeg"/>
+                                                                    <xs:enumeration value="image/jpg"/>
+                                                                    <xs:enumeration value="image/png"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:attribute>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="category">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Общество"/>
+                                                    <xs:enumeration value="Культура"/>
+                                                    <xs:enumeration value="Политика"/>
+                                                    <xs:enumeration value="Спорт"/>
+                                                    <xs:enumeration value="Экономика"/>
+                                                    <xs:enumeration value="Наука"/>
+                                                    <xs:enumeration value="Технологии"/>
+                                                    <xs:enumeration value="Мир"/>
+                                                    <xs:enumeration value="Авто"/>
+                                                    <xs:enumeration value="Аналитика"/>
+                                                    <xs:enumeration value="Здоровье"/>
+                                                    <xs:enumeration value="Интересное"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+            <xs:attribute type="xs:float" name="version"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

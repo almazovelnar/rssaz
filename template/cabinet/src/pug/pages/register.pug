@@ -1,0 +1,28 @@
+extends ../layout/simple-layout.pug
+
+block content
+    section.auth-page.flex-center
+        .register-form
+            .logo.text-center
+                a(href="index.html")
+                    img(src=require("../../images/logo.svg"))
+            |
+            |
+            form(action="#" method="POST")
+                h2.form-name Qeydiyyat
+                |
+                |
+                .form-group
+                    input(class="form-control" type="email" name="email" placeholder="e-mail" require autocomplete="off")
+                .form-group
+                    input(class="form-control" type="password" name="password" placeholder="**********" require)
+                .form-group
+                    input(class="form-control" type="text" name="name" placeholder="Ad" require autocomplete="off")
+                .form-group
+                    input(class="form-control" type="text" name="surname" placeholder="Soyad" require autocomplete="off")
+                .form-group.use-terms
+                    input(class="form-control" type="checkbox" name="agree" id="agree")
+                    label(for="agree") Mən «#[a(href="#" target="_blank") İstifadə qaydaları]» ilə razılaşıram
+                .submit-form
+                    button.btn-custom.submit-register Qeydiyyat
+                        i.material-icons arrow_forward_ios

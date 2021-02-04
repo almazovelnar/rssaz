@@ -1,0 +1,237 @@
+.dashboard-content {
+    min-height: 80vh;
+    padding: 20px 0 60px 0;
+    background: #fafafa;
+
+    &.index {
+        position: relative;
+        padding: 0 0 60px 0;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 220px;
+            background: #bb1d31;
+        }
+    }
+}
+
+.white-panel {
+    position: relative;
+    z-index: 5;
+    padding: 40px 60px;
+    margin: 0 0 22px 0;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.14);
+}
+
+/* ***** -- guide links ***** */
+.guide-links {
+    .white-panel {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        margin: 0 0 20px 0;
+    }
+
+    ul {
+        justify-content: center;
+    }
+
+    li {
+        margin: 5px 15px;
+    }
+
+    a {
+        font-family: "Montserrat Medium", sans-serif;
+        font-size: 14px;
+        padding: 5px 20px;
+        background: #f6f6f6;
+        border-radius: 20px;
+        transition: .3s ease;
+
+        &:hover {
+            color: #fff;
+            background: #bb1d31;
+        }
+    }
+}
+
+/* ***** -- filters ***** */
+.filters {
+    font-size: 14px;
+    font-family: "Montserrat SemiBold", sans-serif;
+
+    .white-panel {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        margin: 0 0 20px 0;
+    }
+
+    .form-group {
+        margin: 0;
+    }
+
+    .form-control {
+        background: #fbfbfb;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .by-date {
+        .form-group {
+            &:before {
+                content: "\f133";
+                font-family: "fontAwesome";
+                position: absolute;
+                left: 18px;
+                color: rgba(#000, .3);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .form-control {
+            padding: 5px 20px 5px 45px;
+            width: 240px;
+        }
+    }
+
+    .by-website {
+        margin: 0 0 0 auto;
+
+        .form-group.select {
+            &:before {
+                bottom: 50%;
+            }
+        }
+
+        .form-control {
+            font-size: 14px;
+            padding: 5px 50px 5px 20px;
+        }
+    }
+}
+
+.traffic-block {
+    justify-content: space-between;
+
+    .traffic-item {
+        width: calc(33.333333% - 10px);
+        padding: 14px 20px 20px 20px;
+        background: #fbfbfb;
+        border-radius: 5px;
+    }
+
+    .name {
+        font-size: 14px;
+        line-height: 18px;
+        color: #bb1d31;
+    }
+
+    .qty {
+        font-family: "Montserrat SemiBold", sans-serif;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 1px;
+        margin: 5px 0;
+    }
+
+    .percentage {
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(#474747, .4);
+    }
+
+}
+
+@media (max-width: 1366px) {
+    .white-panel {
+        padding: 30px 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .white-panel {
+        padding: 20px 30px;
+    }
+
+    .traffic-block {
+        .traffic-item {
+            padding: 15px;
+        }
+    
+        .name {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    
+        .qty {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: .5px;
+        }
+    
+        .percentage {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .traffic-wrapper {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .white-panel {
+        padding: 15px;
+    }
+
+    .guide-links {
+        li {
+            margin: 5px 10px;
+        }
+    
+        a {
+            padding: 5px 15px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-index {
+        &:before {
+            height: 150px;
+        }
+    }
+
+    .filters {
+        .by-date {
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+
+        .by-website {
+            margin: 0;
+        }
+    }
+
+    .traffic-block {
+        .traffic-item {
+            padding: 10px;
+        }
+
+        .qty {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+}
